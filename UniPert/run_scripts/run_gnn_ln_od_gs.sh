@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /data/liyiming/Project/UniPert-G2CP_reproduce/
-source activate performer
+source activate unipert-g2cp-dev
 
 target_embedder="ESM2"
 compound_embedder="ECFP4"

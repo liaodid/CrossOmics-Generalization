@@ -1,6 +1,6 @@
 #!/bin/bash
 cd /data/liyiming/Project/UniPert-G2CP_reproduce/UniPert/
-source activate performer
+source activate unipert-g2cp-dev
 
 target_embedders=(ESM2 OntoProtein PseAAC)  # ESM2 OntoProtein PseAAC 
 compound_embedders=(ECFP4 UniMol KPGT)      # ECFP4 UniMol KPGT

@@ -1,5 +1,5 @@
 cd /data/liyiming/Project/UniPert-G2CP_reproduce/
-source activate scperturb
+source activate unipert-g2cp-dev
 
 datasets=("norman" "dixit") 
 seeds=(1310 229 52 1519 564 ) 

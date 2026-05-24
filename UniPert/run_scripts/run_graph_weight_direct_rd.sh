@@ -1,13 +1,12 @@
 #!/bin/bash
 cd /data/liyiming/Project/UniPert_G2CP/UniPert/
-source activate performer
+source activate unipert-g2cp-dev
 
-
-graph_types=("weighted_directed" "weighted_undirected" "unweighted_undirected" 50%_weighted_directed)               
+graph_types=("weighted_directed" "weighted_undirected" 50%_weighted_directed)               
 out_dims=(256)
 seeds=(2023)
 
-python_script="/data/liyiming/Project/UniPert_G2CP/UniPert/train_grid_search_exps_1008.py"
+python_script="/data/liyiming/Project/UniPert_G2CP/UniPert/train_unipert.py"
 gpu_num=6
 printf "Starting grid search...\n"
 experiment_id=4

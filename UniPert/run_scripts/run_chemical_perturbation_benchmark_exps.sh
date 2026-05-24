@@ -1,6 +1,5 @@
 #!/bin/bash
-
-source activate py310
+source activate unipert-g2cp-dev
 
 dataset="sciplex3_HDAC"
 models=("chemCPA" "UniPert" "UniMol" "KPGT") 

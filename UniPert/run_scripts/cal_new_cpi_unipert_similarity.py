@@ -1,20 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-为多个 UniPert 模型生成 new_CPI 涉及的 compound 和 protein embedding，并计算 cosine 相似度
-
-并行版本：支持多进程并行处理多个模型，自动分配 GPU 资源
-
-用法:
-    python cal_new_cpi_unipert_similarity.py
-    或
-    nohup python -u cal_new_cpi_unipert_similarity.py > cal_new_cpi_unipert_similarity.log 2>&1 &
-    
-并行配置:
-    - 如果有多个 GPU，每个 GPU 分配一个进程
-    - 如果没有 GPU，使用 CPU 核心数的一半作为并行数
-    - 可以通过修改 max_workers 变量手动设置并行数
-"""
 
 import os
 import sys
@@ -77,31 +62,19 @@ model_paths = [
     
 ]
 
-# 数据路径
 new_cpi_path = '/data/liyiming/Project/UniPert-G2CP_reproduce/UniPert/data/processed_pubchem_CPI_25Oct_cid37820_as1216_i81650.csv'
 cp_df_path = '/data/liyiming/Project/UniPert-G2CP_reproduce/UniPert/data/processed_new_compound_cid37820.csv'
 # tgt_fa_path = '/data/liyiming/Project/UniPert-G2CP_reproduce/UniPert/data/ref_target_seq.fasta'
 data_dir = '/data/liyiming/Project/UniPert-G2CP_reproduce/UniPert/data'
 
-# 并行配置（None 表示自动检测，也可以手动设置为具体数字）
 max_workers = 18  
 
-# ========== 归一化函数 ==========
 def normalize(vec):
     v = np.array(vec)
     norm = np.linalg.norm(v)
     return v / norm if norm != 0 else v
 
-# ========== 主函数 ==========
 def process_model(args):
-    """
-    为单个模型生成 embedding 并计算 cosine 相似度
-    
-    Args:
-        args: 包含 (model_path, new_cpi_path, cp_df_path, data_dir, gpu_id) 的元组
-    """
-    # 在 spawn 模式下，每个子进程都需要重新导入
-    # 确保 sys.path 正确设置
     import sys
     if '../' not in sys.path:
         sys.path.append('../')
@@ -109,10 +82,7 @@ def process_model(args):
     
     model_path, new_cpi_path, cp_df_path, data_dir, gpu_id = args
     
-    # 设置当前进程的 GPU（如果有多个 GPU）
-    # 在 spawn 模式下，每个子进程都是全新的，需要重新检查 CUDA
     if torch.cuda.is_available() and gpu_id is not None:
-        # 确保 gpu_id 在有效范围内
         if gpu_id < torch.cuda.device_count():
             torch.cuda.set_device(gpu_id)
             device = f'cuda:{gpu_id}'
@@ -284,12 +254,9 @@ def process_model(args):
 
 # ========== 执行主流程 ==========
 if __name__ == '__main__':
-    # 设置 multiprocessing 启动方法为 'spawn'，以支持 CUDA 多进程
-    # 这是必需的，因为 CUDA 不支持在 fork 的子进程中重新初始化
     try:
         mp.set_start_method('spawn', force=True)
     except RuntimeError:
-        # 如果已经设置过，忽略错误
         pass
     
     print("="*80)
