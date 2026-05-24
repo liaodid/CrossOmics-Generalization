@@ -1,0 +1,37 @@
+# python
+__pycache__/
+*.pyc
+
+# jupyter
+.ipynb_checkpoints/
+*analysis_context_specific_interconnectivity_1124_ecfp_compare.ipynb
+
+# pytorch
+*.pt
+*.pth
+*.ckpt
+
+# data
+data/
+*.h5ad
+*.pkl
+*.npy
+*.npz
+
+# logs
+wandb/
+logs/
+
+# outputs
+saved_models/
+results/
+
+# mmseqs
+mmseqs_storage/
+
+# vscode/cursor
+.vscode/
+.cursor/
+
+# mac/linux
+.DS_Store
