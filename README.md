@@ -2,7 +2,6 @@
 
 This repository present code and analysis pipelines for reproducing the experiments, figures, and computational analyses presented in the UniPert–G2CP study. For a user-friendly inference-oriented UniPert framework, please refer to [the official UniPert repository](https://github.com/lynn-1998/UniPert)。
 
-
 ## Repository Structure
 
 ```text
@@ -16,6 +15,7 @@ UniPert-G2CP_reproduce/
 │   ├── run_scripts/              # Training and evaluation scripts
 │   ├── data/                     # UniPert datasets (available via Zenodo) 
 │   ├── saved_models/             # UniPert checkpoints (available via Zenodo)  
+│   ├── current_model/            # Released UniPert inference model (available via Zenodo)  
 │   └── results/                  # UniPert outputs and evaluations (available via Zenodo)  
 │
 ├── G2CP/
@@ -28,7 +28,7 @@ UniPert-G2CP_reproduce/
 └── analysis_assets/
     ├── fig1*.ipynb               # Figure 1 analyses
     ├── fig2*.ipynb               # Figure 2 analyses
-    └── figS1*.ipynb               # Figure S1 analyses
+    └── figS1*.ipynb              # Figure S1 analyses
 ```
 
 ## Data and Checkpoints
