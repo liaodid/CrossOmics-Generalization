@@ -2,9 +2,9 @@
 cd /data/liyiming/Project/UniPert_G2CP/UniPert/
 source activate unipert-g2cp-dev
 
-graph_types=("weighted_directed" "weighted_undirected" 50%_weighted_directed)               
+graph_types=("weighted_directed" "weighted_undirected" "50%_weighted_directed" "unweighted_undirected")               
 out_dims=(256)
-seeds=(2023)
+seeds=(2024 2025 2026 2027 2028)
 
 python_script="/data/liyiming/Project/UniPert_G2CP/UniPert/train_unipert.py"
 gpu_num=6
@@ -17,7 +17,7 @@ for graph_type in "${graph_types[@]}"; do
             gpu_id=$((experiment_id % gpu_num))
             experiment_id=$((experiment_id+1))
 
-            exp_name="unipert_graph_rd_1225/${graph_type}_${out_dim}_${seed}"
+            exp_name="unipert_graph_rd/${graph_type}_${out_dim}_${seed}"
             save_dir="/data/liyiming/Project/UniPert_G2CP/UniPert/saved_models/${exp_name}"
 
             mkdir -p "$save_dir"

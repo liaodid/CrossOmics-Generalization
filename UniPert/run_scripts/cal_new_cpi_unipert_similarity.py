@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os
+import glob
 import sys
 import pickle
 import numpy as np
@@ -18,49 +19,7 @@ sys.path.append('../')
 from unipert import UniPert
 
 # ========== 配置部分 ==========
-# 模型路径列表
-model_paths = [
-    '../saved_models/unipert_graph_rd_1008/50%_weighted_directed_256',
-    '../saved_models/unipert_graph_rd_1008/unweighted_undirected_256',
-    '../saved_models/unipert_graph_rd_1008/weighted_directed_256',
-    '../saved_models/unipert_graph_rd_1008/weighted_undirected_256',
-
-    '../saved_models/unipert_graph_rd_1224/50%_weighted_directed_256_2025',
-    '../saved_models/unipert_graph_rd_1224/unweighted_undirected_256_2025',
-    '../saved_models/unipert_graph_rd_1224/weighted_directed_256_2025',
-    '../saved_models/unipert_graph_rd_1224/weighted_undirected_256_2025',
-
-    '../saved_models/unipert_graph_rd_1225/50%_weighted_directed_256_2026',
-    '../saved_models/unipert_graph_rd_1225/unweighted_undirected_256_2026',
-    '../saved_models/unipert_graph_rd_1225/weighted_directed_256_2026',
-    '../saved_models/unipert_graph_rd_1225/weighted_undirected_256_2026',
-
-    '../saved_models/unipert_graph_rd_1225/50%_weighted_directed_256_2027',
-    '../saved_models/unipert_graph_rd_1225/unweighted_undirected_256_2027',
-    '../saved_models/unipert_graph_rd_1225/weighted_directed_256_2027',
-    '../saved_models/unipert_graph_rd_1225/weighted_undirected_256_2027',
-
-    '../saved_models/unipert_graph_rd_1225/50%_weighted_directed_256_2028',
-    '../saved_models/unipert_graph_rd_1225/unweighted_undirected_256_2028',
-    '../saved_models/unipert_graph_rd_1225/weighted_directed_256_2028',
-    '../saved_models/unipert_graph_rd_1225/weighted_undirected_256_2028',
-
-    '../saved_models/unipert_embedder_gs_1230/OntoProtein_ECFP4_2024',
-    '../saved_models/unipert_embedder_gs_1230/PseAAC_ECFP4_2024',
-
-    '../saved_models/unipert_embedder_gs_1230/OntoProtein_ECFP4_2025',
-    '../saved_models/unipert_embedder_gs_1230/PseAAC_ECFP4_2025',
-
-    '../saved_models/unipert_embedder_gs_1230/OntoProtein_ECFP4_2026',
-    '../saved_models/unipert_embedder_gs_1230/PseAAC_ECFP4_2026',
-
-    '../saved_models/unipert_embedder_gs_1230/OntoProtein_ECFP4_2027',
-    '../saved_models/unipert_embedder_gs_1230/PseAAC_ECFP4_2027',
-
-    '../saved_models/unipert_embedder_gs_1230/OntoProtein_ECFP4_2028',
-    '../saved_models/unipert_embedder_gs_1230/PseAAC_ECFP4_2028',
-    
-]
+model_paths = sorted(glob.glob('/data/liyiming/Project/UniPert-G2CP_reproduce/UniPert/saved_models/unipert_graph_rd/*'))
 
 new_cpi_path = '/data/liyiming/Project/UniPert-G2CP_reproduce/UniPert/data/processed_pubchem_CPI_25Oct_cid37820_as1216_i81650.csv'
 cp_df_path = '/data/liyiming/Project/UniPert-G2CP_reproduce/UniPert/data/processed_new_compound_cid37820.csv'

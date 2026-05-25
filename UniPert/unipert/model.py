@@ -334,7 +334,7 @@ class UniPert:
         
         # generate graph data
         logger.info(colors.yellow(f"Building a {graph_type} graph..."))
-        valid_graph_types = ['weighted_directed', 'weighted_undirected', '50%_weighted_directed']
+        valid_graph_types = ['weighted_directed', 'weighted_undirected', '50%_weighted_directed', 'unweighted_undirected']
         if graph_type not in valid_graph_types:
             raise ValueError(f"Invalid graph_type: '{graph_type}'. Must be one of {valid_graph_types}")
 
