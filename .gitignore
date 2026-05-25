@@ -4,7 +4,6 @@ __pycache__/
 
 # jupyter
 .ipynb_checkpoints/
-*analysis_context_specific_interconnectivity_1124_ecfp_compare.ipynb
 
 # pytorch
 *.pt
