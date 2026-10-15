@@ -14,9 +14,9 @@
 - 实验室没有自产数据，也不打算做湿实验，只使用公开数据。
 - “没有人做过两种组学联合训练”目前**没有经过系统文献检索**。
 
-## 2. “西湖那篇”应当是 ProteinTalks（2026‑10‑15，推断，待项目成员确认）
+## 2. “西湖那篇”就是 ProteinTalks（2026‑10‑15，项目成员已确认）
 
-- `docs/papers/` 中只有 Sun et al.（Nature 2026）来自西湖大学，而且正是纯蛋白组的虚拟细胞模型。
+- 起初是推断：`docs/papers/` 中只有 Sun et al.（Nature 2026）来自西湖大学，而且正是纯蛋白组的虚拟细胞模型。2026‑10‑15 项目成员确认无误。
 - UniPert‑G2CP 的作者单位是腾讯和中南大学等，与西湖大学无关，而且它不预测蛋白组。
 - 详见 [baseline/proteintalks](../baseline/proteintalks/README.md)。
 
@@ -81,19 +81,51 @@
 - “24 h、10 µM、每种药 6 个重复”尚未对照原文 Methods 核实。
 - 详见 [data/hepg2-drug-proteome-msv000101671](../data/hepg2-drug-proteome-msv000101671/README.md)。
 
+## 8. ProteinTalks：代码已公开，训练数据还没拿到（2026‑10‑15）
+
+- 项目成员说明：西湖作者那边代码可以拿到，训练数据集还没拿到。
+- 公开代码：GitHub `guomics-lab/PTV-1`，核对时的最新提交为 `1223e94`，模型目录下的许可证为 MIT。
+  - `ProteinTalks/` 中有完整的模型、训练、评价代码，还有一个训练好的 checkpoint（`best_checkpoint.pth`）。
+  - 根目录有 4 个 R 分析脚本：分子指纹计算、差异分析、PertScore、Mfuzz 聚类。
+- 代码层面的事实（读 `ProteinTalks/README.md` 核对）：
+  - 输入：加药前的蛋白组、一个“与蛋白对齐的扰动描述”、两种药物的分子特征向量（881 维指纹 + 54 维理化性质，由 `ChemmineR.R` 生成）。
+  - 用神经 ODE 预测 6、24、48 h 的蛋白组，再由一个表型 head 预测药效或药物组合协同的概率。
+  - **ProteinTalks 本身已经是多任务模型**：损失 = (1 − λ) × 蛋白表达 MSE + λ × 表型 BCE，默认 λ = 0.8。
+    本项目若提出“多 head 联合训练”，要明确新意在于“加入转录组数据”，而不是“多任务”本身。
+  - 训练数据是同一前缀的 7 个 CSV 文件，格式见 [data/proteintalks](../data/proteintalks/README.md)。
+- 详见 [baseline/proteintalks](../baseline/proteintalks/README.md)。
+
+## 9. ProteinTalks 的细胞系与 LINCS 的重合（2026‑10‑15，`script/lincs_cell_line_coverage.sh`）
+
+ProteinTalks 有三个蛋白组子数据集：PTDS（主数据集）、mtPTDS（多时间点）、PTPC（跨癌种），各自的说明见 [data/proteintalks](../data/proteintalks/README.md)。
+论文中出现的细胞系，在 LINCS 中的签名数如下：
+
+| 细胞系 | 属于 | LINCS 化合物签名（Phase I / II） | LINCS CRISPR | LINCS shRNA |
+|---|---|---|---|---|
+| **A375** | PTPC | 15,453 / 12,050 | 353 | 14,800 |
+| **MCF7** | 论文正文提到，可能属于 PTDS（待查补充表 1a） | 29,312 / 12,737 | 705（2 批） | 19,669 |
+| BT20、HS578T、MDA‑MB‑231 | 论文正文提到（乳腺癌） | 各约 1,400 / 1,400 | 无 | 无 |
+| HCT116 | PTPC | 363 / 0 | 无 | 无 |
+
+其余 15 个（NCI‑H1975、NCI‑H2170、Panc 10.05、T47D、BT549、MDA‑MB‑436/453/468、HCC 系列）在 LINCS 中按常见命名都没找到。
+
+**结论：A375 是目前最现实的联合训练起点**：ProteinTalks 有它的蛋白组（PTPC，708 种化合物），LINCS 有它的大量转录组和 CRISPR 数据。
+如果 MCF7 确实在 PTDS 里，它会是第二个候选。下一步要按化学结构核对两边的化合物重合。
+
 ---
 
 ## 待定事项
 
 | # | 问题 | 负责人 | 状态 |
 |---|---|---|---|
-| 1 | 确认“西湖那篇”就是 ProteinTalks | 项目成员 | 待确认 |
+| 1 | 确认“西湖那篇”就是 ProteinTalks | 项目成员 | ✅ 已确认（2026‑10‑15） |
 | 2 | 定义任务与指标：比药效预测（AUPRC/AUROC）、蛋白组变化预测（Δ 的相关性），还是两者都比？在哪个测试集上比？ | — | 未定 |
-| 3 | 获取 ProteinTalks 数据（iProX IPX0007409000 / db.prottalks.com），确认是否需要申请 | — | 未开始 |
+| 3 | 获取 ProteinTalks 训练数据（向西湖作者索取，或通过 iProX IPX0007409000 / db.prottalks.com）。代码已公开，见第 8 节 | 项目成员 | 进行中：代码可得，数据未拿到 |
 | 4 | 系统文献检索：是否已有联合转录组与蛋白组扰动数据训练的模型 | — | 未开始 |
-| 5 | 选定主线细胞系（A375 / MCF7 / 其他），并核对两种组学的药物与剂量覆盖 | — | 未开始 |
+| 5 | 选定主线细胞系（A375 / MCF7 / 其他），并核对两种组学的药物与剂量覆盖 | — | 进行中：细胞系重合已核对（第 9 节），化合物重合待拿到 PTPC 药物列表后核对 |
 | 6 | 数据划分策略：按药物 k 折；结构类似物要按分子骨架划分 | — | 未定 |
 | 7 | 数据量不平衡的处理：损失加权、均衡采样、先预训练再微调，或按相关性筛选数据 | — | 未定 |
+| 8 | 项目自有代码与文档的许可证 | 项目成员 | 现阶段不考虑（2026‑10‑15 决定） |
 
 ## 讨论中提出的最小实验设计（草案，未采纳）
 

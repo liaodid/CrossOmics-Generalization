@@ -15,6 +15,7 @@ data/<数据集名>/
 ```
 
 - 数据集名统一用小写加短横线，形如 `<细胞系或来源>-<内容>-<编号>`。
+- 同一来源发布了多个有名字的子数据集时，在该来源目录下按子集名建子目录（如 `proteintalks/ptds/`）。来源目录的 README 写获取方式和通用格式，子目录的 README 写各子集的内容。
 - 下载后在 README 中记录：下载日期、URL、文件名、大小、SHA256。
 - `processed/` 中的文件必须能由 `script/` 或 `colab/` 中的代码重新生成，并在 README 中写明生成方式。
 - 未经核实的数字要明确标注“未核实”，并写明出处。
@@ -27,7 +28,7 @@ data/<数据集名>/
 |---|---|---|---|---|---|
 | [lincs-l1000](lincs-l1000/README.md) | 转录组（L1000，978 个地标基因） | 数十个，含 HepG2、A375、MCF7 | 数十万条扰动签名 | 📝 | 转录组侧的主要大规模数据 |
 | [unipert-g2cp-zenodo](unipert-g2cp-zenodo/README.md) | 转录组、细胞形态、化合物‑靶点对 | A549、A375、MCF7、PC3、HT29、U2OS | 作者处理后的全部实验输入与权重 | ⏳ | Baseline 1 复现所需 |
-| [proteintalks](proteintalks/README.md) | 蛋白组（DIA‑MS） | 18 个乳腺癌系 + 5 个其他癌种系 | 16,311 个质谱文件 + 2,307 个样本 | ⏳ | 对标模型 ProteinTalks 的数据，蛋白侧的主要大规模数据 |
+| [proteintalks](proteintalks/README.md)<br>└ [ptds](proteintalks/ptds/README.md) · [mtptds](proteintalks/mtptds/README.md) · [ptpc](proteintalks/ptpc/README.md) | 蛋白组（DIA‑MS） | 18 个乳腺癌系 + 5 个其他癌种系（含 A375） | PTDS 16,311 个质谱文件；mtPTDS 2,528 个样本；PTPC 2,307 个样本 | ⏳ | 对标模型 ProteinTalks 的数据，蛋白侧的主要大规模数据 |
 | [hepg2-drug-proteome-msv000101671](hepg2-drug-proteome-msv000101671/README.md) | 蛋白组（Orbitrap Astral） | HepG2 | 172 种化合物，1,232 个样本，超过 8,700 个蛋白 | 📝 | HepG2 蛋白组；数据规模可观，但只有一个细胞系 |
 | [hepg2-drug-transcriptome-gse51952](hepg2-drug-transcriptome-gse51952/README.md) | 转录组（芯片） | HepG2 | 22 种药，105 个样本 | 📝 | 早期探索用的小型转录组，已证实与上面蛋白组无可用配对 |
 | [hepg2-degrader-proteome-basu2026](hepg2-degrader-proteome-basu2026/README.md) | 蛋白组 | HepG2 等 | 78 种 FDA 药 + 204 个 AR 降解剂（部分未核实） | ❓ | 候选的 HepG2 蛋白组数据 |

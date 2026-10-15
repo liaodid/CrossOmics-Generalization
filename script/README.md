@@ -12,10 +12,12 @@
 | 脚本 | 作用 | 资源 |
 |---|---|---|
 | [audit_lincs_metadata.sh](audit_lincs_metadata.sh) | 统计 LINCS 两个阶段中，某细胞系（默认 HEPG2）的化合物签名按时间和剂量的分布，以及哪些细胞系有 CRISPR 敲除数据 | 下载约 13 MB 元数据；只用 curl、awk，几秒钟即可跑完 |
+| [lincs_cell_line_coverage.sh](lincs_cell_line_coverage.sh) | 给定一组细胞系，统计各自在 LINCS 中的化合物、CRISPR、shRNA 签名数；默认查 ProteinTalks 论文中出现的细胞系 | 复用上一个脚本缓存的元数据，不下载 |
 
 用法：
 
 ```bash
 bash script/audit_lincs_metadata.sh              # HEPG2
 CELL=A375 bash script/audit_lincs_metadata.sh    # 其他细胞系
+bash script/lincs_cell_line_coverage.sh A375 MCF7  # 先跑上一行缓存元数据
 ```

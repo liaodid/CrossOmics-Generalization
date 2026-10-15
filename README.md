@@ -4,7 +4,7 @@
 
 > **当前阶段：设想与数据调研，尚无实验结果。**
 > - 只使用公开数据，不做湿实验。
-> - 主要对标对象：西湖大学的蛋白组虚拟细胞模型 ProteinTalks（Nature 2026），其数据尚未获取。
+> - 主要对标对象：西湖大学的蛋白组虚拟细胞模型 ProteinTalks（Nature 2026，已确认）。代码已公开，训练数据尚未拿到。
 > - 已入库的代码只有 Baseline 1（UniPert‑G2CP 上游代码，未运行）。
 >
 > 已核实的事实、讨论结论和待定事项都记录在 [docs/findings.md](docs/findings.md)。
@@ -38,18 +38,22 @@ CrossOmics-Generalization/
 │   │   ├── G2CP/                #   扰动响应预测模型（改自 GEARS）
 │   │   ├── analysis_assets/     #   论文作图 notebook（依赖相对路径，需与代码同目录）
 │   │   └── extra/               #   复现仓库之外的原作者源码 + 来源登记表
-│   └── proteintalks/            # Baseline 2：ProteinTalks（主要对标对象；代码未入库）
+│   └── proteintalks/            # Baseline 2：ProteinTalks（主要对标对象；代码公开，尚未放入本仓库）
 ├── data/                        # 数据：Git 只跟踪各数据集的 README.md
 │   ├── README.md                #   数据集一览与目录约定
 │   ├── lincs-l1000/
 │   ├── unipert-g2cp-zenodo/
-│   ├── proteintalks/
+│   ├── proteintalks/            #   ProteinTalks 数据总说明
+│   │   ├── ptds/                #     主数据集：18 个乳腺癌系
+│   │   ├── mtptds/              #     多时间点数据集
+│   │   └── ptpc/                #     跨癌种数据集（含 A375）
 │   ├── hepg2-drug-proteome-msv000101671/
 │   ├── hepg2-drug-transcriptome-gse51952/
 │   ├── hepg2-degrader-proteome-basu2026/
 │   └── tahoe-100m/
 ├── script/                      # 可复现的分析脚本
-│   └── audit_lincs_metadata.sh
+│   ├── audit_lincs_metadata.sh
+│   └── lincs_cell_line_coverage.sh
 ├── colab/                       # 探索性 Colab notebook
 │   └── hepg2_alignment_drive.ipynb
 └── docs/
@@ -66,8 +70,11 @@ CrossOmics-Generalization/
 - [x] 核实 LINCS 中各细胞系的药物与 CRISPR 覆盖（`script/audit_lincs_metadata.sh`）
 - [x] HepG2 RNA‑蛋白配对探索：没有找到同条件的数据（见 `colab/`）
 - [x] 仓库结构与文档整理
-- [ ] 确认对标论文，并定义任务、测试集与指标（[待定事项](docs/findings.md#待定事项) 第 1、2 项）
-- [ ] 获取 ProteinTalks 数据与代码
+- [x] 确认对标论文：ProteinTalks（2026‑10‑15）
+- [x] 确认 ProteinTalks 代码公开且完整（`guomics-lab/PTV-1`），并整理其输入格式
+- [x] 核对 ProteinTalks 细胞系与 LINCS 的重合：A375、MCF7 两边都有（`script/lincs_cell_line_coverage.sh`）
+- [ ] 定义任务、测试集与指标（[待定事项](docs/findings.md#待定事项) 第 2 项）
+- [ ] 获取 ProteinTalks 训练数据（正在与西湖作者联系）
 - [ ] 系统文献检索：联合两种组学的扰动模型是否已有先例
 - [ ] 选定主线细胞系，整理转录组与蛋白组数据
 - [ ] 跑通基线，建立统一评价协议
@@ -82,4 +89,4 @@ CrossOmics-Generalization/
 ## 许可证
 
 - `baseline/unipert-g2cp/` 沿用上游的 MIT 许可证（见该目录下的 `LICENSE`）。
-- 本项目自有代码与文档的许可证尚未确定，由仓库所有者决定。
+- 本项目自有代码与文档的许可证：现阶段不考虑（2026‑10‑15 决定），之后再定。

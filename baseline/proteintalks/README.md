@@ -1,14 +1,50 @@
 # Baseline 2：ProteinTalks（对标对象）
 
-> 状态：⏳ 代码与数据都未入库。本 README 依据论文 PDF 整理（2026‑10‑15），供决定复现方案时参考。
+> 状态（2026‑10‑15）：项目成员已确认，这就是“西湖那篇”，即本项目的主要对标对象。
+> **代码已公开**，但还没有放进本仓库；**训练数据还没拿到**。
 
 ## 论文与代码
 
 - Sun, Qian, Li, Liu, …, E, Zhou, Wen, Zhu, Guo. **An operational perturbation proteomics-based virtual cell model.** Nature, 2026.
   https://doi.org/10.1038/s41586-026-11001-9 （西湖大学郭天南组等）
-- 代码：https://github.com/guomics-lab/PTV-1
-  （论文 Code availability 写的是 “project data analysis codes”，其中是否包含完整的模型训练代码，需要克隆后确认）
+- 代码：https://github.com/guomics-lab/PTV-1 ，2026‑10‑15 核对时的最新提交为 `1223e94`，`ProteinTalks/LICENCE.md` 为 MIT 许可证。
 - 数据：见 [data/proteintalks](../../data/proteintalks/README.md)
+
+## 代码仓库里有什么（2026‑10‑15 核对）
+
+```text
+PTV-1/
+├── ProteinTalks/                 # 模型本体（Python 3.10.6）
+│   ├── main.py                   #   训练入口
+│   ├── model.py                  #   神经 ODE + 表型 head
+│   ├── trainer.py / multi_task_learning.py / swag.py   # 训练、多任务损失、SWAG 不确定性
+│   ├── dataset.py / config.py / metrics.py / utils.py / plot.py
+│   ├── best_checkpoint.pth       #   训练好的权重
+│   └── requirements.txt
+├── ChemmineR.R                   # 生成 881 维药物分子指纹和 54 维理化性质
+├── Differentially expressed analysis.R   # 计算 p 值和倍数变化
+├── PertScore calculation.R       # 把蛋白分为上调 / 下调 / 不变
+└── mFuzz analysis.R              # 时间序列聚类
+```
+
+训练示例（摘自其 README）：
+
+```bash
+cd ProteinTalks
+python main.py \
+    --dataset_file_dir /path/to/dataset/ \
+    --trainval_file_prefix allcelltype_drugpair_crossdrug_ \
+    --time_stamp_predict_drug 6_24_48 \
+    --train_percent 0.7 --val_percent 0.2 --test_percent 0.1 \
+    --batch_size 64 --learning_rate 0.0005 --lambda_pheno 0.8 --use_swag
+```
+
+需要的 7 个输入文件见 [data/proteintalks](../../data/proteintalks/README.md#代码需要的输入格式)。
+
+### 放进本仓库的方式
+
+按 [docs/collaboration.md](../../docs/collaboration.md) 的 `upstream/...` 流程，把 `PTV-1` 在固定提交上的内容原样放到本目录（`baseline/proteintalks/`），
+并新建 `docs/upstream_commit.txt` 记录提交号。`best_checkpoint.pth` 会被 `.gitignore` 忽略，需另行下载。
 
 ## 方法概要
 
@@ -20,6 +56,11 @@ ProteinTalks 是一个**只用蛋白组**的扰动响应模型，分两个模块
 | 模块 2（Loss 2） | 药物分子指纹、药物理化性质、P0h、模块 1 预测的蛋白组轨迹 | 药效（敏感 / 不敏感）、药物组合协同 | 多层感知机 |
 
 模型先在约 3,800 万个蛋白定量值上预训练，在新数据集（如 PTPC）上用少样本微调迁移。
+
+代码 README 补充的细节：
+- 扰动的输入是一个“与蛋白对齐的扰动描述”，即把药物靶点映射到蛋白上，思路与 UniPert 把药物映射到蛋白空间类似。
+- 训练目标是 `(1 − λ) × 蛋白表达 MSE + λ × 表型 BCE`，默认 λ = 0.8。也就是说，**ProteinTalks 本身已经是多任务模型**。
+  本项目的新意应落在“加入转录组数据”上。
 
 ## 论文中的评价协议与结果（摘录）
 
@@ -41,7 +82,9 @@ ProteinTalks 是一个**只用蛋白组**的扰动响应模型，分两个模块
 
 ## 复现进度
 
-- [ ] 获取数据（iProX IPX0007409000 / db.prottalks.com）
-- [ ] 克隆 `guomics-lab/PTV-1`，确认是否包含模型代码，记录提交号
+- [x] 确认对标对象就是 ProteinTalks（2026‑10‑15）
+- [x] 确认公开代码包含完整的模型与训练代码（`guomics-lab/PTV-1@1223e94`）
+- [ ] 把代码按固定提交放入本目录
+- [ ] 获取训练数据（向西湖作者索取，或通过 iProX IPX0007409000 / db.prottalks.com）
 - [ ] 跑通论文中的一个评价设置
 - [ ] 与 Baseline 1 及本项目方法统一数据划分和指标
