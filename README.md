@@ -15,7 +15,7 @@
 |---|---|
 | 生物学术语（面向 CS 背景） | [docs/glossary.md](docs/glossary.md) |
 | 项目目标、已知事实、待定事项 | [docs/findings.md](docs/findings.md) |
-| 相关论文与链接 | [docs/references.md](docs/references.md) |
+| 相关论文与链接 | [docs/papers.csv](docs/papers.csv)（论文清单：方法名、标题、DOI、PDF 文件名、对应目录），[docs/references.md](docs/references.md)（摘要） |
 | 有哪些对比方法 | [baseline/README.md](baseline/README.md) |
 | 有哪些数据、能否获取 | [data/README.md](data/README.md) |
 | 分析脚本 | [script/README.md](script/README.md) |
@@ -59,7 +59,8 @@ CrossOmics-Generalization/
 └── docs/
     ├── findings.md              # 已核实的事实、结论、待定事项
     ├── glossary.md              # 术语表
-    ├── references.md            # 参考文献
+    ├── papers.csv               # 论文清单：方法名 ↔ 标题 ↔ DOI ↔ 本地 PDF ↔ 仓库目录
+    ├── references.md            # 参考文献摘要
     ├── collaboration.md         # 协作约定
     └── papers/                  # 论文 PDF（仅本地，不提交）
 ```

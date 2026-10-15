@@ -64,5 +64,6 @@ PR 说明应包含修改目的、验证方式和受影响的实验。
 | 可复用的分析脚本 | `script/` | 动词开头，如 `audit_lincs_metadata.sh` |
 | 探索性 / Colab notebook | `colab/` | 内容描述，如 `hepg2_alignment_drive.ipynb` |
 | 项目文档 | `docs/` | — |
+| 论文 | PDF 放 `docs/papers/`（不提交）；在 [papers.csv](papers.csv) 加一行，`pdf_file` 填 PDF 文件名 | `key` 用小写短横线，如 `proteintalks`、`basu2026-degrader` |
 
 上游代码放入 `baseline/` 后保持原样；必须修改时单独提交，并在该 baseline 的 README 中记录改动。

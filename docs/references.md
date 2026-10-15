@@ -1,6 +1,11 @@
 # 参考文献
 
-PDF 放在本地的 `docs/papers/`，出于版权和体积原因不提交到 Git（见 `.gitignore`）。新成员按 DOI 自行下载到该目录，文件名与下表一致。
+**论文清单以 [papers.csv](papers.csv) 为准**：一行一篇，列出方法名、标题、作者、年份、期刊、DOI、本地 PDF 文件名、
+单位、组学、在项目中的角色、仓库内对应目录、代码和数据链接。可以直接用 Excel 或 pandas 打开。
+本页是便于阅读的摘要。新增论文时先改 CSV，再视需要更新本页。
+
+PDF 放在本地的 `docs/papers/`，出于版权和体积原因不提交到 Git（见 `.gitignore`）。
+新成员按 DOI 自行下载到该目录，并按 CSV 中 `pdf_file` 列的名字保存。
 
 ## 核心论文
 
@@ -26,5 +31,6 @@ PDF 放在本地的 `docs/papers/`，出于版权和体积原因不提交到 Git
 
 ## 方法学提醒
 
-- Ahlmann‑Eltze, Huber, Anders（Nature Methods, 2025）比较了深度学习扰动预测模型与简单线性基线，发现前者尚未稳定胜出。
-  设计评价协议时应包含“预测均值”“预测对照”这类简单基线。（本仓库未存 PDF，引用前请核对原文。）
+- Ahlmann‑Eltze, Huber, Anders. Deep-learning-based gene perturbation effect prediction does not yet outperform simple linear baselines.
+  Nature Methods, 2025. https://doi.org/10.1038/s41592-025-02772-6 （标题与 DOI 经 Crossref 核对）
+  结论是深度学习扰动预测模型尚未稳定胜过简单线性基线。设计评价协议时，应包含“预测均值”“预测对照”这类简单基线。
