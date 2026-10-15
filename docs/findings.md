@@ -72,6 +72,15 @@
 - 细胞系最好一致。A375（ProteinTalks 的 PTPC 子集与 LINCS 都有，且 LINCS 有其 CRISPR 数据）是目前最现实的候选；
   MCF7 是否在 ProteinTalks 的 PTDS 中，需查其补充表 1a 确认。HepG2 缺少 CRISPR 数据和配对条件，不适合作为主线。
 
+## 7. MSV000101671 的来源已核实（2026‑10‑15，MassIVE 与 Europe PMC）
+
+- MassIVE MSV000101671 来自 Cedars‑Sinai 的 Meyer 实验室，仪器为 Orbitrap Astral，状态为 Partial Public，许可证 CC0。
+- 对应预印本：Robotic perturbation proteomics and AI agents enable scalable drug mechanism discovery（bioRxiv 2026）。
+  摘要给出的规模：HepG2，172 种化合物，1,232 个蛋白组样本，定量蛋白超过 8,700 个。
+- MassIVE 上的提交者账号名与 GitHub `jymbcrc` 一致，所以 notebook 用到的 `jymbcrc/drug-portal` 基本可以确定是作者本人发布的处理结果。
+- “24 h、10 µM、每种药 6 个重复”尚未对照原文 Methods 核实。
+- 详见 [data/hepg2-drug-proteome-msv000101671](../data/hepg2-drug-proteome-msv000101671/README.md)。
+
 ---
 
 ## 待定事项

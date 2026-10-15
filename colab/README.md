@@ -22,5 +22,5 @@
 
 - 只检查了 LINCS Phase I。Phase II 中 HepG2 在 24 h、10 µM 下有 268 种化合物，没有被检查。
 - 药名精确匹配不去除盐型，蛋白组那边的药名（如 “Abemaciclib (methanesulfonate)”）几乎不可能对上 LINCS。
-- 第 1 节的数据仓库读取失败，改用了 `jymbcrc/drug-portal`，其与原论文数据的对应关系尚未核实。
+- 第 1 节的数据仓库读取失败，改用了 `jymbcrc/drug-portal`。2026‑10‑15 已核对：MassIVE 数据集的提交者账号名与它一致，基本可以确定是作者本人发布的处理结果。
 - 这个 notebook 由 AI 工具生成，第 1 个单元中关于“未读到本地 PDF”等说明，描述的是生成时的工具环境。

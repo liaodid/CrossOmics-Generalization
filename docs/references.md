@@ -21,7 +21,7 @@ PDF 放在本地的 `docs/papers/`，出于版权和体积原因不提交到 Git
 | UniPert 推理仓库 | https://github.com/TencentAILabHealthcare/UniPert | 只做推理时使用 |
 | ProteinTalks 代码 | https://github.com/guomics-lab/PTV-1 | 尚未克隆 |
 | State 代码 | https://github.com/ArcInstitute/state | — |
-| HepG2 172 种药蛋白组的方法论文 | https://pmc.ncbi.nlm.nih.gov/articles/PMC13174343/ | 对应 MSV000101671 |
+| HepG2 172 种药蛋白组：Robotic perturbation proteomics and AI agents enable scalable drug mechanism discovery（bioRxiv 2026，DOI 10.64898/2026.05.04.722718） | https://pmc.ncbi.nlm.nih.gov/articles/PMC13174343/ | 数据为 MassIVE MSV000101671 |
 | LINCS 文件说明 | https://clue.io/connectopedia/category/Data | — |
 
 ## 方法学提醒
