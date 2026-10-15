@@ -10,9 +10,11 @@ __pycache__/
 *.pth
 *.ckpt
 
-# data
+# data: any data/ dir keeps only README.md under version control
 Helvetica.ttf
-data/
+**/data/**
+!**/data/**/
+!**/data/**/README.md
 *.h5ad
 *.pkl
 *.npy
@@ -34,5 +36,9 @@ mmseqs_storage/
 .vscode/
 .cursor/
 
+# papers (copyrighted PDFs stay local; citations live in docs/references.md)
+docs/papers/
+
 # mac/linux
 .DS_Store
+.nfs*
