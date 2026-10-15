@@ -1,6 +1,10 @@
-# UniPert-G2CP 实验复现与基线协作
+# Baseline 1：UniPert-G2CP 复现说明
 
-本仓库用于复现 UniPert-G2CP 的实验，并将其作为后续细胞扰动预测研究的基线。
+> 本文件原为仓库根目录 README，仓库重构后移入 `baseline/unipert-g2cp/`。
+> 文中路径均相对于本目录（`baseline/unipert-g2cp/`）。
+> 项目整体说明见仓库根目录 [README](../../README.md)，数据目录约定见 [data/README](../../data/README.md)。
+
+本目录用于复现 UniPert-G2CP 的实验，并将其作为后续细胞扰动预测研究的基线。
 
 代码来源于论文作者公开的复现仓库。我们保留原始代码与来源说明，逐步补充中文文档、环境配置、运行记录和基线实验结果。
 
@@ -76,10 +80,9 @@ G2CP 使用改造后的 GEARS 骨干进行表型预测：
 数据、权重和结果目录可能需要下载作者资源后补齐。
 
 ```text
-.
+baseline/unipert-g2cp/
 ├── README.md
 ├── LICENSE
-├── .gitignore
 ├── docs/
 │   ├── README.upstream.md
 │   └── upstream_commit.txt
@@ -111,7 +114,8 @@ G2CP 使用改造后的 GEARS 骨干进行表型预测：
 │   ├── data/
 │   ├── saved_models/
 │   └── results/
-└── analysis_assets/
+├── analysis_assets/
+└── extra/              # 本项目新增：复现仓库之外的原作者源码，见第 11 节
 ```
 
 `chemcial_benchmark` 是上游目录中的实际拼写，使用时保持一致。
@@ -205,6 +209,7 @@ Notebook 通常依赖事先生成或下载的中间结果。
 
 按上游说明将资源放入对应的 `data/`、`current_model/`、
 `saved_models/` 或 `results/` 目录。
+下载位置与登记方式见 [data/unipert-g2cp-zenodo](../../data/unipert-g2cp-zenodo/README.md)。
 
 本项目尚未核对下载包的全部文件清单。
 下载后应记录文件名、版本、大小和 SHA256，并确认目录层级。
@@ -338,7 +343,7 @@ G2CP/data/LINCS/A549/A549_gene_chem_ctrl_adata.h5ad
 前提是已安装依赖、准备数据并修正内部路径。
 
 ```bash
-cd ~/UniPert-G2CP_reproduce
+cd baseline/unipert-g2cp   # 从仓库根目录进入
 
 export WANDB_MODE=offline
 export CUDA_VISIBLE_DEVICES=0
@@ -415,54 +420,14 @@ pretrain_frac,finetune_frac,metric,value,commit_sha
 
 ## 8. 团队协作
 
-### 8.1 分支与 Pull Request
-
-- `main`：保留经过检查的代码和文档。
-- `docs/...`：文档更新。
-- `fix/...`：运行问题修复。
-- `exp/...`：实验改动。
-
-示例：
-
-```bash
-git switch -c exp/a549-baseline
-
-# 修改并验证后，按实际文件选择提交
-git add README.md
-git commit -m "docs: update baseline instructions"
-git push -u origin exp/a549-baseline
-```
-
-在自己的协作仓库中提交 Pull Request。
-PR 说明应包含修改目的、验证方式和受影响的实验。
-
-### 8.2 建议分工
-
-| 工作 | 交付物 |
-|---|---|
-| 环境与路径修正 | 可复现环境文件、运行说明 |
-| 数据准备 | 数据清单、校验值、划分说明 |
-| 原论文实验 | 命令、日志、指标与论文对应关系 |
-| 新方法比较 | 统一评估协议和结果表 |
-
-在 Issues 中记录待办、运行错误和复现差异，
-避免仅依赖聊天记录传递实验设置。
-
-### 8.3 GitHub 中保存什么
-
-提交代码、配置、说明文档和小型结果汇总。
-大型数据、模型权重、缓存和训练日志通过作者数据入口
-或团队共享存储管理，并在文档中记录位置。
-
-上游 `.gitignore` 已排除多种数据与权重文件。
-被忽略的文件不会随普通 Git 克隆自动下载。
+分支、Pull Request、分工与 GitHub 存放约定适用于整个项目，已移至 [docs/collaboration.md](../../docs/collaboration.md)。
 
 ## 9. 来源与许可证
 
 本仓库基于作者公开的 UniPert-G2CP 复现代码，
 不代表论文作者的官方维护版本。
 
-保留根目录 LICENSE、原始版权声明和第三方组件的许可信息。
+本目录下的 LICENSE 即上游 MIT 许可证（Copyright (c) 2026 Yiming Li），保留原始版权声明和第三方组件的许可信息。
 上游复现仓库根目录采用 MIT 许可证；
 UniPert 独立仓库和其他组件的许可应分别核对，
 不能用一个根目录声明替代所有组件许可。
@@ -483,3 +448,38 @@ UniPert 独立仓库和其他组件的许可应分别核对，
 - [ ] 完成正式多种子实验
 - [ ] 汇总论文复现结果
 - [ ] 建立本项目的统一基线协议
+
+## 11. 补充原作者源码：放在哪里
+
+本目录目前只有作者复现仓库 `lynn-1998/UniPert-G2CP_reproduce` 在提交 `5939b6b` 时的内容（见 `docs/upstream_commit.txt`）。
+如果手上还有作者的其他源码（数据预处理、额外的分析脚本或 notebook 等），按下表放置：
+
+| 这份代码是什么 | 放到哪里 | 说明 |
+|---|---|---|
+| 复现仓库里已有文件的另一个版本 | 覆盖同一路径的文件 | 单独提交，提交信息写明新版本的来源 |
+| UniPert 模型、训练相关的 `.py` / `.sh` | `UniPert/` 下与作者原始目录一致的相对路径 | 保持作者的目录结构，否则 `sys.path` 和相对路径会失效 |
+| G2CP 训练、推理相关的 `.py` / `.sh` | `G2CP/` 下与作者原始目录一致的相对路径 | 同上 |
+| 作者的分析、作图 notebook | `analysis_assets/` | 现有 notebook 用 `../UniPert/...`、`../G2CP/...` 读文件，放在这里相对路径才成立 |
+| 复现仓库里没有对应位置的作者代码（例如从 LINCS 原始数据生成 `*_gene_chem_ctrl_adata.h5ad` 的预处理脚本） | `extra/<来源名>/`，如 `extra/lincs-preprocessing/` | 先读 [extra/README.md](extra/README.md) |
+| 其他论文的代码（如 ProteinTalks） | 仓库根目录的 `baseline/<方法名>/` | 不要混进本目录 |
+| 数据、模型权重、中间结果（`.h5ad`、`.pkl`、`.pt`、大型 `.csv` 等） | **不进 Git**，放 `data/unipert-g2cp-zenodo/raw/` | 见 [data/unipert-g2cp-zenodo](../../data/unipert-g2cp-zenodo/README.md) |
+| 我们自己写的分析代码 | 仓库根目录的 `script/` 或 `colab/` | 不放进 baseline 目录 |
+
+上传要求：
+
+1. **保持原样**：先按作者原版提交一次；需要改路径或修 bug，再单独提交。
+2. **登记来源**：在 [extra/README.md](extra/README.md) 的登记表中记一行：放在哪个路径、来源（链接，或由谁、何时提供）、版本或提交号、许可证。
+3. **提交前检查**：运行 `git status`，确认没有数据文件、权重或个人路径配置混进来。单个文件超过 50 MB 时 GitHub 会警告，超过 100 MB 会拒绝。
+4. **走分支**：分支名用 `upstream/...`，流程见 [docs/collaboration.md](../../docs/collaboration.md)。
+
+```bash
+git switch main && git pull
+git switch -c upstream/add-author-analysis-code
+
+# 把文件复制到上表对应的位置，并在 extra/README.md 登记来源
+git status                                   # 确认只有代码和文档
+git add baseline/unipert-g2cp/
+git commit -m "upstream: add author analysis code (<来源>)"
+git push -u origin upstream/add-author-analysis-code
+# 然后在 GitHub 上开 Pull Request
+```
