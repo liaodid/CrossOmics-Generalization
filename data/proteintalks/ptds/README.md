@@ -31,8 +31,17 @@ PTDS 即 ProteinTalks Dataset（按 mtPTDS 的全称推断）。总体来源、�
 | MDA‑MB‑231 | 1,405 / 1,411 | 无 |
 
 HCC 系列、MDA‑MB‑453、MDA‑MB‑468、BT549、T47D 等，在 LINCS 中按常见命名没有找到。
-**MCF7 是否确实属于 PTDS，需查补充表 1a 确认。** 如果是，它会是转录组 + 蛋白组联合训练最有价值的细胞系之一。
+**MCF7 确实属于 PTDS**（2026‑10‑16 由 PTDS 样本表确认）。按化学结构匹配，MCF7 上有 20 种 PTDS 药物在 LINCS 中也有签名，
+共 200 条 RNA 签名、174 个 PTDS 样本（不限剂量和时间），详见 [docs/findings.md 第 11 节](../../../docs/findings.md) 和
+[reports/ptds-unipert-2026-10-16/](../../../reports/ptds-unipert-2026-10-16/)。它和 A375 是转录组 + 蛋白组联合训练最有价值的两个细胞系。
 
 ## 状态
 
-⏳ 待获取。拿到后把原始文件放 `raw/`，整理好的数据放 `processed/`，并在此登记文件清单和 SHA256。
+🟡 部分获取（2026‑10‑16）：
+
+| 文件 | 状态 | 说明 |
+|---|---|---|
+| `01_sample_info.xlsx`（PTDS 样本表） | 项目成员本地已有 | SHA256 `01b2497c43c0de79621c383fe9686854a1c58e22b779837d76270190f58f2007`（记录于 `reports/ptds-unipert-2026-10-16/summary.json`）。列包括 `Sample_ID`、`Cell_Line`、`Pert_Name1/2`、`Pert_Does1/2`（剂量）、`Pert_Time`、`BioRep`、`Machine`、`Drug_Type`。按约定应放在本目录的 `raw/` 下 |
+| 蛋白强度矩阵 | 未获取 | 正在与西湖作者联系 |
+
+拿到其余文件后，原始文件放 `raw/`，整理好的数据放 `processed/`，并在此登记文件清单和 SHA256。

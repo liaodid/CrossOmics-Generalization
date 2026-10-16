@@ -49,7 +49,7 @@ PR 说明应包含修改目的、验证方式和受影响的实验。
 - 任意层级 `data/` 目录下只跟踪 `README.md`，数据文件本身不进 Git。
 - `*.h5ad`、`*.pkl`、`*.pt` 等数据与权重格式全局忽略。
 - `saved_models/`、`results/`、`logs/`、`wandb/` 忽略。
-- `docs/papers/` 下的论文 PDF 不提交（版权和体积原因，单个 16–36 MB），引用信息写在 [references.md](references.md)。
+- 根目录 `pdf/` 下的论文 PDF 不提交（版权和体积原因）；下载清单 `pdf/download_manifest.json` 和手动下载入口会提交。早期约定的 `docs/papers/` 已不再使用，同样不提交。
 
 被忽略的文件不会随普通 Git 克隆自动下载，
 新成员需按各 `data/<数据集>/README.md` 的说明自行获取。
@@ -64,6 +64,9 @@ PR 说明应包含修改目的、验证方式和受影响的实验。
 | 可复用的分析脚本 | `script/` | 动词开头，如 `audit_lincs_metadata.sh` |
 | 探索性 / Colab notebook | `colab/` | 内容描述，如 `hepg2_alignment_drive.ipynb` |
 | 项目文档 | `docs/` | — |
-| 论文 | PDF 放 `docs/papers/`（不提交）；在 [papers.csv](papers.csv) 加一行，`pdf_file` 填 PDF 文件名 | `key` 用小写短横线，如 `proteintalks`、`basu2026-degrader` |
+| 论文 | PDF 放根目录 `pdf/`（不提交）；在 [papers.csv](papers.csv) 加一行，`pdf_file` 填 PDF 文件名、`pdf_version` 写清是预印本还是正式版；逐篇介绍放 `docs/literature/<key>.md` | `key` 用小写短横线，PDF 命名为 `<key>.pdf`，如 `proteintalks.pdf` |
+| 某篇论文所用数据的说明 | `data/<方法名>/README.md`，并在 `data/README.md` 的“论文与数据文档对应表”登记 | 与 `papers.csv` 的 `key` 一致，如 `data/gears/` |
+| 分析结果（小型 CSV/JSON/图） | `reports/<分析名>-<日期>/`，附 `summary.json` 或 README，见 [reports/README.md](../reports/README.md) | 如 `reports/ptds-unipert-2026-10-16/` |
+| 汇报材料（幻灯片、综述） | `output/<名称>-<日期>/`，附 README，见 [output/README.md](../output/README.md) | 如 `output/overleaf-expanded-2026-10-16/` |
 
 上游代码放入 `baseline/` 后保持原样；必须修改时单独提交，并在该 baseline 的 README 中记录改动。
