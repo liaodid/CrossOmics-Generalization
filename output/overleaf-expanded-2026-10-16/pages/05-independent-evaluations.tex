@@ -1,0 +1,12 @@
+% 5
+\begin{frame}[t]{独立评测给出的约束}
+\vspace{.15cm}\bodyfont\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{@{}P{3.1cm}Y Y@{}}
+\toprule\textbf{研究}&\textbf{主要发现}&\textbf{对本次的约束}\\\midrule
+Ahlmann-Eltze et al.\newline Nat. Methods, 2025 & 指定单 / 双基因扰动任务中，所测深度模型未超过简单线性基线。 & 不预设复杂预测器更好；基线必须与候选模型同划分、同指标。\\
+Systema\newline Nat. Biotechnol., 2026 & 扰动间共享的系统性变化会抬高常用指标；强调扰动特异性信号。 & 同时报告变化量误差与扰动区分能力。\\
+Kedzierska et al.\newline Genome Biol., 2025 & 零样本表征评测中，所测单细胞基础模型未稳定超过简单方法。 & 预训练不保证迁移；每个任务单独检验。\\
+Nadig et al.\newline Nat. Genet., 2025 & 扰动图谱的差异表达分析显示效应随细胞背景变化。 & 跨背景任务需明确哪些信息可见、哪些隐藏。\\\bottomrule
+\end{tabularx}
+\source{[3,10--12]；Systema 为 2025 在线 / 2026 卷期。以上为作者报告的结论，本次尚未复现。}
+\end{frame}

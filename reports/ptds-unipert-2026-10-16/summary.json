@@ -1,0 +1,17 @@
+{
+  "ptds_cell": "MCF7",
+  "ptds_unique_drugs": 63,
+  "matched_ptds_drugs": 20,
+  "matched_rna_brd_ids": 21,
+  "matched_rna_signatures": 200,
+  "author_control_rows": 1,
+  "unresolved_ptds_drugs": 1,
+  "unmapped_rna_brd_rows": 0,
+  "ptds_sample_info_sha256": "01b2497c43c0de79621c383fe9686854a1c58e22b779837d76270190f58f2007",
+  "run_utc": "2026-10-16T07:16:51.176594+00:00",
+  "rdkit_version": "2026.09.1",
+  "python": "3.13.16",
+  "dose_filter": false,
+  "time_filter": false,
+  "matrix_transformation": "none"
+}

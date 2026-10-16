@@ -1,0 +1,26 @@
+% 9
+\begin{frame}[t]{方向 A：只有对照数据的新背景能否预测？}
+\vspace{.1cm}{\color{DarkBlue}\normalsize\bfseries 在目标细胞背景只提供对照表达、不提供任何扰动响应的条件下，\\[.08cm]
+预训练细胞模型相对简单基线的增益有多大？增益出现在哪些扰动和基因上？\par}
+\vspace{.3cm}
+\centering
+\begin{tikzpicture}[nd/.style={box,inner sep=7pt,text width=2.2cm,minimum height=1.05cm},
+  al/.style={font=\scriptsize,text=Muted,above,inner sep=1.5pt}]
+ \node[nd,fill=PaleBlue] (src) at (0,0) {\ico{\faDatabase}\enspace\textbf{源背景}\\\scriptsize 多个背景，含扰动响应};
+ \node[nd,fill=PaleTeal,draw=DarkBlue,line width=.9pt] (mdl) at (3.9,0) {\ico{\faProjectDiagram}\enspace\textbf{预测模型}\\\scriptsize 或对照基线};
+ \node[nd,fill=PaleAmber] (tgt) at (7.8,0) {\ico{\faEyeSlash}\enspace\textbf{目标背景}\\\scriptsize 仅对照细胞可见};
+ \node[nd,draw=Muted,dashed] (tru) at (7.8,-1.75) {\ico{\faLock}\enspace\textbf{真实响应}\\\scriptsize 对模型隐藏};
+ \node[nd,text width=1.9cm] (sc) at (11.4,-.875) {\ico{\faLock}\enspace\textbf{评分脚本}\\\scriptsize 实验前冻结};
+ \draw[flow] (src) -- node[al]{训练} (mdl);
+ \draw[flow] (mdl) -- node[al]{预测} (tgt);
+ \draw[flow] (tgt.east) -| node[al,pos=.25]{预测结果} (sc.north);
+ \draw[flow] (tru.east) -| node[al,pos=.25]{真值} (sc.south);
+ \draw[dashed,draw=Muted] (tgt) -- (tru);
+ \node[font=\scriptsize\bfseries,text=Muted,anchor=west] (kl) at (-1.35,-3.05) {对照组（同划分、同指标）};
+ \node[chip,right=.3cm of kl] (k1) {对照均值};
+ \node[chip,right=.25cm of k1] (k2) {源背景平均效应迁移};
+ \node[chip,right=.25cm of k2] (k3) {线性 / 加性基线};
+ \node[chip,right=.25cm of k3,fill=PaleTeal,draw=DarkBlue] (k4) {候选：预训练细胞模型};
+\end{tikzpicture}
+\source{任务设置参考 [13] VCC 2026；模型参考 [8,9]；基线与划分参考 [10]；扰动特异性评估参考 [11]。候选研究设想，尚未实现。}
+\end{frame}

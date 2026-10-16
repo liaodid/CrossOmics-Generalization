@@ -1,0 +1,17 @@
+\appendix
+\section{附录\quad 按需展开}
+% A1
+\begin{frame}[t]{补充：单细胞基础模型与 LLM 的差异}
+\vspace{.1cm}
+\fontsize{8.5}{11.8}\selectfont\renewcommand{\arraystretch}{1.05}
+\begin{tabularx}{\textwidth}{@{}P{2.85cm}Y Y@{}}
+\toprule\textbf{模型}&\textbf{输入编码与训练目标}&\textbf{与本次的关系}\\\midrule
+Geneformer\newline Nature, 2023 & 按表达统计校正后的基因排序编码；掩码预测。 & 表征可迁移到下游任务；不直接输出表达值。\\
+scGPT\newline Nat. Methods, 2024 & 基因 token 与分箱后的表达值联合建模；生成式预训练。 & 含扰动预测微调任务；微调能力不等于零样本泛化。\\
+scFoundation\newline Nat. Methods, 2024 & 直接建模表达值；输入与训练目标不同于前两者。 & 可作为扰动预测的骨干之一。\\
+Cell2Sentence / C2S-Scale & 排序基因名组成的文本句；用通用 LLM 继续训练。 & 让文本模型接入细胞数据；生成的假设仍需实验核验。\\
+UCE / Evo 2 / GenePT & 蛋白质表示、DNA 序列模型、基因文字描述向量。 & 分子与功能先验；与细胞响应预测是不同任务。\\
+TranscriptFormer\newline Science, 2026 & 跨物种生成式细胞图谱。 & 补充阅读；关注其跨物种迁移设置。\\\bottomrule
+\end{tabularx}
+\source{[5--7,14--19]；编码方式按原始论文摘要与方法说明理解，尚未逐一运行。}
+\end{frame}

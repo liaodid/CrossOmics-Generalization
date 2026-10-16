@@ -1,0 +1,20 @@
+% A2
+\begin{frame}[t]{补充：变化量、区分与基线增益}
+\begin{columns}[T,onlytextwidth]
+ \column{.48\textwidth}
+ \textbf{扰动效应与误差}\par
+ \[\Delta\bar{x}_g=\bar{x}^{\mathrm{pert}}_g-\bar{x}^{\mathrm{ctrl}}_g\]
+ \bodyfont 预测与真实 $\Delta\bar{x}$ 的 RMSE 或 MAE；按全基因、高变基因、差异基因分别计算。\par\vspace{.22cm}
+ \textbf{扰动区分}\par
+ \bodyfont 真实扰动在各候选扰动预测中的距离排名，汇总为平均排名或 top-$k$ 准确率；共享响应不改变排名，可补充相关性指标。
+ \column{.48\textwidth}
+ \textbf{拟预先约定的检查}\par
+ \begin{itemize}\bodyfont
+ \item 基线增益取 $\text{指标}_{\mathrm{model}}-\text{指标}_{\mathrm{baseline}}$；同划分、同基因集合、同指标，对每个基线分别报告。
+ \item 按细胞背景划分；同一数据集不跨集合泄漏；目标背景的扰动响应只用于评分。
+ \item 多个随机种子与多个留出背景；不把同一扰动的子集当作独立样本。
+ \item 数值与文件校验由固定脚本完成；生物解释再请合作者核验。
+ \end{itemize}
+\end{columns}
+\source{本页是本项目的拟议操作定义；并非引用某一篇论文的统一标准。关键参照：[10,11,13]。}
+\end{frame}

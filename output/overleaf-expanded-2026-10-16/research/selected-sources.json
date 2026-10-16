@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "authors_year": "Bunne et al. · Cell, 2024",
+    "title": "How to build the virtual cell with artificial intelligence: Priorities and opportunities",
+    "url": "https://doi.org/10.1016/j.cell.2024.11.015",
+    "review_level": "概念综述；核查摘要及评价、数据相关正文。",
+    "takeaway": "多尺度、多模态细胞建模的愿景；初期价值在于可验证假设。"
+  },
+  {
+    "id": 2,
+    "authors_year": "Replogle et al. · Cell, 2022",
+    "title": "Mapping information-rich genotype-phenotype landscapes with genome-scale Perturb-seq",
+    "url": "https://doi.org/10.1016/j.cell.2022.05.013",
+    "review_level": "核查 Perturb-seq 数据说明与正文。",
+    "takeaway": "基因组规模 CRISPRi 扰动与单细胞转录组读出；候选任务的主要数据来源。"
+  },
+  {
+    "id": 3,
+    "authors_year": "Nadig et al. · Nature Genetics, 2025",
+    "title": "Transcriptome-wide analysis of differential expression in perturbation atlases",
+    "url": "https://doi.org/10.1038/s41588-025-02169-3",
+    "review_level": "核查摘要和数据说明。",
+    "takeaway": "扰动图谱的差异表达分析；效应随细胞背景变化，跨背景任务定义需谨慎。"
+  },
+  {
+    "id": 4,
+    "authors_year": "Roohani et al. · Nature Biotechnology, 2024（2023 在线）",
+    "title": "Predicting transcriptional outcomes of novel multigene perturbations with GEARS",
+    "url": "https://doi.org/10.1038/s41587-023-01905-6",
+    "review_level": "模型论文；核查模型、划分及评价相关正文。",
+    "takeaway": "利用基因关系图预测单/多基因扰动；原始设置须与跨背景预测区别。"
+  },
+  {
+    "id": 5,
+    "authors_year": "Cui et al. · Nature Methods, 2024",
+    "title": "scGPT: toward building a foundation model for single-cell multi-omics using generative AI",
+    "url": "https://doi.org/10.1038/s41592-024-02201-0",
+    "review_level": "模型论文；核查摘要与任务描述。",
+    "takeaway": "基因和分箱表达值建模，含扰动预测微调任务；不能把微调能力直接等同于零样本泛化。"
+  },
+  {
+    "id": 6,
+    "authors_year": "Theodoris et al. · Nature, 2023",
+    "title": "Transfer learning enables predictions in network biology",
+    "url": "https://doi.org/10.1038/s41586-023-06139-9",
+    "review_level": "核查摘要与 rank-value 编码说明。",
+    "takeaway": "Geneformer 使用经过表达统计校正的排序编码；不直接输出表达值。"
+  },
+  {
+    "id": 7,
+    "authors_year": "Hao et al. · Nature Methods, 2024",
+    "title": "Large-scale foundation model on single-cell transcriptomics",
+    "url": "https://doi.org/10.1038/s41592-024-02305-7",
+    "review_level": "核查期刊摘要与模型说明。",
+    "takeaway": "scFoundation 学习表达表示；输入与训练目标有别于其他单细胞基础模型。"
+  },
+  {
+    "id": 8,
+    "authors_year": "Adduri et al. · Cell, 2026（8 月 31 日在线）",
+    "title": "Predicting cellular responses to perturbation across diverse contexts with State",
+    "url": "https://doi.org/10.1016/j.cell.2026.07.052",
+    "review_level": "期刊出版信息、摘要；另核查官方模型页和预印本部分正文。",
+    "takeaway": "在细胞集合上建模状态转移；固定模型接口可作为候选预测器。"
+  },
+  {
+    "id": 9,
+    "authors_year": "Dong et al. · bioRxiv, 2026（预印本）",
+    "title": "Stack: In-Context Learning of Single-Cell Biology",
+    "url": "https://doi.org/10.64898/2026.01.09.698608",
+    "review_level": "核查预印本摘要及 Arc 官方说明；标题与作者经 Crossref 元数据核对。",
+    "takeaway": "细胞集合的上下文学习是新进展；本版不把其指标与其他设置混用。"
+  },
+  {
+    "id": 10,
+    "authors_year": "Ahlmann-Eltze et al. · Nature Methods, 2025",
+    "title": "Deep-learning-based gene perturbation effect prediction does not yet outperform simple linear baselines",
+    "url": "https://doi.org/10.1038/s41592-025-02772-6",
+    "review_level": "独立评测；核查正文、基线与划分方法。",
+    "takeaway": "在所测任务中简单基线具有竞争力；双基因加性基线有其适用条件。"
+  },
+  {
+    "id": 11,
+    "authors_year": "Viñas Torné et al. · Nature Biotechnology, 2026（2025 在线）",
+    "title": "Systema: a framework for evaluating genetic perturbation response prediction beyond systematic variation",
+    "url": "https://doi.org/10.1038/s41587-025-02777-8",
+    "review_level": "评测方法；核查正文、centroid accuracy 及局限。",
+    "takeaway": "共享变化会影响常用分数；仍发现部分模型能恢复特定功能群信息。"
+  },
+  {
+    "id": 12,
+    "authors_year": "Kedzierska et al. · Genome Biology, 2025",
+    "title": "Zero-shot evaluation reveals limitations of single-cell foundation models",
+    "url": "https://doi.org/10.1186/s13059-025-03574-x",
+    "review_level": "核查正文；标题经 Crossref 元数据核对。",
+    "takeaway": "主要是零样本表征评测，所测基础模型未稳定超过简单方法；预训练不保证迁移。"
+  },
+  {
+    "id": 13,
+    "authors_year": "Arc Institute · 官方任务说明，2026-08-20",
+    "title": "The 2026 Virtual Cell Challenge: predicting perturbation responses in cell contexts a model has never seen",
+    "url": "https://arcinstitute.org/news/virtual-cell-challenge-2026",
+    "review_level": "官方任务全文。",
+    "takeaway": "目标背景提供对照而隐藏干预响应；并非所有该背景信息都不可见。"
+  },
+  {
+    "id": 14,
+    "authors_year": "Levine et al. · ICML, 2024",
+    "title": "Cell2Sentence: Teaching Large Language Models the Language of Biology",
+    "url": "https://proceedings.mlr.press/v235/levine24a.html",
+    "review_level": "核查论文摘要与 PMLR 页面。",
+    "takeaway": "基因排序文本支持直接适配语言模型。"
+  },
+  {
+    "id": 15,
+    "authors_year": "Rizvi et al. · bioRxiv, 2025/2026（预印本）",
+    "title": "Scaling Large Language Models for Next-Generation Single-Cell Analysis",
+    "url": "https://doi.org/10.1101/2025.04.14.648850",
+    "review_level": "核查 v4 摘要及作者研究发布页。",
+    "takeaway": "C2S-Scale：基因排序文本接入 LLM；特定细胞实验支持的假设不能泛化为普遍疗效。"
+  },
+  {
+    "id": 16,
+    "authors_year": "Chen and Zou · Nature Biomedical Engineering, 2025（2024 在线）",
+    "title": "Simple and effective embedding model for single-cell biology built from ChatGPT",
+    "url": "https://doi.org/10.1038/s41551-024-01284-6",
+    "review_level": "核查期刊摘要、出版信息及代码指针。",
+    "takeaway": "GenePT 将基因描述转为向量；它是表示方法，不是预测器。"
+  },
+  {
+    "id": 17,
+    "authors_year": "Rosen et al. · bioRxiv, 2023（预印本）",
+    "title": "Universal Cell Embeddings: A Foundation Model for Cell Biology",
+    "url": "https://doi.org/10.1101/2023.11.28.568918",
+    "review_level": "核查原始预印本摘要与表示说明；标题与作者经 Crossref 元数据核对。",
+    "takeaway": "使用蛋白质表示连接跨物种细胞。"
+  },
+  {
+    "id": 18,
+    "authors_year": "Brixi et al. · Nature, 2026",
+    "title": "Genome modelling and design across all domains of life with Evo 2",
+    "url": "https://doi.org/10.1038/s41586-026-10176-5",
+    "review_level": "核查期刊摘要与出版信息；标题经 Crossref 元数据核对。",
+    "takeaway": "DNA 序列模型的能力需与细胞响应预测区别。"
+  },
+  {
+    "id": 19,
+    "authors_year": "Pearce et al. · Science, 2026",
+    "title": "TranscriptFormer: A generative cell atlas across 1.5 billion years of evolution",
+    "url": "https://doi.org/10.1126/science.aec8514",
+    "review_level": "核查期刊元数据与摘要。",
+    "takeaway": "跨物种生成式图谱；保留为补充阅读。"
+  },
+  {
+    "id": 20,
+    "authors_year": "Xiao et al. · arXiv, 2024",
+    "title": "CellAgent: An LLM-driven Multi-Agent Framework for Automated Single-cell Data Analysis",
+    "url": "https://arxiv.org/abs/2407.09811",
+    "review_level": "核查 arXiv 摘要与方法概述。",
+    "takeaway": "规划、执行、评估与任务内迭代；本版仅作为 LLM 连接方式之一列出。"
+  },
+  {
+    "id": 21,
+    "authors_year": "Huang et al. · bioRxiv, 2025（所查预印本）",
+    "title": "Biomni: A General-Purpose Biomedical AI Agent",
+    "url": "https://doi.org/10.1101/2025.05.30.656746",
+    "review_level": "核查原始预印本摘要、架构概述及作者信息。",
+    "takeaway": "检索辅助规划和代码执行组合生物工具；本版仅作为 LLM 连接方式之一列出。"
+  },
+  {
+    "id": 22,
+    "authors_year": "Li et al. · Cell 2026",
+    "title": "UniPert-G2CP bridges genetic and chemical screens from molecular representation to phenotype modeling",
+    "url": "https://doi.org/10.1016/j.cell.2026.06.005",
+    "review_level": "本次用户提供正式 PDF；核查 Results、STAR Methods 数据与发布说明。",
+    "takeaway": "统一扰动表示与遗传到化学迁移；不是 RNA/蛋白丰度联合训练。"
+  },
+  {
+    "id": 23,
+    "authors_year": "Adduri et al. · Cell 2026",
+    "title": "Predicting cellular responses to perturbation across diverse contexts with State",
+    "url": "https://doi.org/10.1016/j.cell.2026.07.052",
+    "review_level": "本次用户提供正式版 corrected proof；核查正文与 STAR Methods；未取得单独 Table S1/S2。",
+    "takeaway": "SE 1.67 亿细胞；ST 超过 1 亿扰动细胞；数据均为单细胞 RNA。"
+  },
+  {
+    "id": 24,
+    "authors_year": "Sun et al. · Nature 2026",
+    "title": "An operational perturbation proteomics-based virtual cell model",
+    "url": "https://doi.org/10.1038/s41586-026-11001-9",
+    "review_level": "本次用户提供正式 PDF；核查 PTDS、mtPTDS、PTPC、PTNC 统计口径。",
+    "takeaway": "DIA-MS 蛋白丰度动态和药效；PTPC 总样本与独立/扰动级样本分开。"
+  },
+  {
+    "id": 25,
+    "authors_year": "Burq et al. · bioRxiv 2026-08-19 v1",
+    "title": "Single-cell foundation models benefit from cross-modal training: adding proteomics data beats parameter scaling",
+    "url": "https://doi.org/10.64898/2026.08.14.744845",
+    "review_level": "本地 11 页全文及 SI；核查 §2.1–2.4、Table 1、SI S1/S2；未复现。",
+    "takeaway": "Tahoe-x1 70M 在 48,843 蛋白样本上继续预训练 1 epoch；评估用近邻，输入边界需审查。"
+  }
+]

@@ -1,0 +1,175 @@
+﻿Sample_ID,Cell_Line,Pert_ID1,Pert_Name1,Pert_Does1,Pert_ID2,Pert_Name2,Pert_Does2,Pert_Time,BioRep,NY_Label,Machine,Drug_Type,cell_key
+B246,MCF7,#12,Letrozole (=#52),10.0,,,,24,1.0,,D,single,MCF7
+B2241,MCF7,#12,Letrozole (=#52),10.0,,,,24,2.0,,D,single,MCF7
+B267,MCF7,#12,Letrozole (=#52),10.0,,,,48,1.0,,D,single,MCF7
+B2262,MCF7,#12,Letrozole (=#52),10.0,,,,48,2.0,,D,single,MCF7
+B4262,MCF7,#12,Letrozole (=#52),10.0,,,,48,3.0,,D,single,MCF7
+B225,MCF7,#12,Letrozole (=#52),10.0,,,,6,1.0,,D,single,MCF7
+B2220,MCF7,#12,Letrozole (=#52),10.0,,,,6,2.0,,D,single,MCF7
+B4220,MCF7,#12,Letrozole (=#52),10.0,,,,6,3.0,,D,single,MCF7
+B251,MCF7,#20,Olaparib,10.0,,,,24,1.0,,D,single,MCF7
+B2246,MCF7,#20,Olaparib,10.0,,,,24,2.0,,D,single,MCF7
+B4246,MCF7,#20,Olaparib,10.0,,,,24,3.0,,D,single,MCF7
+B272,MCF7,#20,Olaparib,10.0,,,,48,1.0,,D,single,MCF7
+B2267,MCF7,#20,Olaparib,10.0,,,,48,2.0,,D,single,MCF7
+B4267,MCF7,#20,Olaparib,10.0,,,,48,3.0,,D,single,MCF7
+B230,MCF7,#20,Olaparib,10.0,,,,6,1.0,,D,single,MCF7
+B2225,MCF7,#20,Olaparib,10.0,,,,6,2.0,,D,single,MCF7
+B4225,MCF7,#20,Olaparib,10.0,,,,6,3.0,,D,single,MCF7
+B254,MCF7,#26,Bosutinib Monohydrate,10.0,,,,24,1.0,,D,single,MCF7
+B2249,MCF7,#26,Bosutinib Monohydrate,10.0,,,,24,2.0,,D,single,MCF7
+B4249,MCF7,#26,Bosutinib Monohydrate,10.0,,,,24,3.0,,D,single,MCF7
+B275,MCF7,#26,Bosutinib Monohydrate,10.0,,,,48,1.0,,D,single,MCF7
+B2270,MCF7,#26,Bosutinib Monohydrate,10.0,,,,48,2.0,,D,single,MCF7
+B4270,MCF7,#26,Bosutinib Monohydrate,10.0,,,,48,3.0,,D,single,MCF7
+B233,MCF7,#26,Bosutinib Monohydrate,10.0,,,,6,1.0,,D,single,MCF7
+B2228,MCF7,#26,Bosutinib Monohydrate,10.0,,,,6,2.0,,D,single,MCF7
+B299,MCF7,#27,Enzalutamide,10.0,,,,24,1.0,,D,single,MCF7
+B2250,MCF7,#27,Enzalutamide,10.0,,,,24,2.0,,D,single,MCF7
+B4250,MCF7,#27,Enzalutamide,10.0,,,,24,3.0,,D,single,MCF7
+B320,MCF7,#27,Enzalutamide,10.0,,,,48,1.0,,D,single,MCF7
+B2271,MCF7,#27,Enzalutamide,10.0,,,,48,2.0,,D,single,MCF7
+B4271,MCF7,#27,Enzalutamide,10.0,,,,48,3.0,,D,single,MCF7
+B278,MCF7,#27,Enzalutamide,10.0,,,,6,1.0,,D,single,MCF7
+B2229,MCF7,#27,Enzalutamide,10.0,,,,6,2.0,,D,single,MCF7
+B300,MCF7,#28,Vandetanib,10.0,,,,24,1.0,,D,single,MCF7
+B2295,MCF7,#28,Vandetanib,10.0,,,,24,2.0,,D,single,MCF7
+B4295,MCF7,#28,Vandetanib,10.0,,,,24,3.0,,D,single,MCF7
+B2316,MCF7,#28,Vandetanib,10.0,,,,48,1.0,,D,single,MCF7
+B4316,MCF7,#28,Vandetanib,10.0,,,,48,2.0,,D,single,MCF7
+B279,MCF7,#28,Vandetanib,10.0,,,,6,1.0,,D,single,MCF7
+B2274,MCF7,#28,Vandetanib,10.0,,,,6,2.0,,D,single,MCF7
+B4274,MCF7,#28,Vandetanib,10.0,,,,6,3.0,,D,single,MCF7
+B302,MCF7,#30,Pazopanib Hydrochloride,10.0,,,,24,1.0,,D,single,MCF7
+B2297,MCF7,#30,Pazopanib Hydrochloride,10.0,,,,24,2.0,,D,single,MCF7
+B4297,MCF7,#30,Pazopanib Hydrochloride,10.0,,,,24,3.0,,D,single,MCF7
+B323,MCF7,#30,Pazopanib Hydrochloride,10.0,,,,48,1.0,,D,single,MCF7
+B2318,MCF7,#30,Pazopanib Hydrochloride,10.0,,,,48,2.0,,D,single,MCF7
+B4318,MCF7,#30,Pazopanib Hydrochloride,10.0,,,,48,3.0,,D,single,MCF7
+B281,MCF7,#30,Pazopanib Hydrochloride,10.0,,,,6,1.0,,D,single,MCF7
+B2276,MCF7,#30,Pazopanib Hydrochloride,10.0,,,,6,2.0,,D,single,MCF7
+B4276,MCF7,#30,Pazopanib Hydrochloride,10.0,,,,6,3.0,,D,single,MCF7
+B304,MCF7,#32,Lapatinib Ditosylate Hydrate,10.0,,,,24,1.0,,D,single,MCF7
+B2299,MCF7,#32,Lapatinib Ditosylate Hydrate,10.0,,,,24,2.0,,D,single,MCF7
+B4299,MCF7,#32,Lapatinib Ditosylate Hydrate,10.0,,,,24,3.0,,D,single,MCF7
+B325,MCF7,#32,Lapatinib Ditosylate Hydrate,10.0,,,,48,1.0,,D,single,MCF7
+B2320,MCF7,#32,Lapatinib Ditosylate Hydrate,10.0,,,,48,2.0,,D,single,MCF7
+B4320,MCF7,#32,Lapatinib Ditosylate Hydrate,10.0,,,,48,3.0,,D,single,MCF7
+B283,MCF7,#32,Lapatinib Ditosylate Hydrate,10.0,,,,6,1.0,,D,single,MCF7
+B2278,MCF7,#32,Lapatinib Ditosylate Hydrate,10.0,,,,6,2.0,,D,single,MCF7
+B4278,MCF7,#32,Lapatinib Ditosylate Hydrate,10.0,,,,6,3.0,,D,single,MCF7
+B305,MCF7,#33,Vorinostat,10.0,,,,24,1.0,,D,single,MCF7
+B2300,MCF7,#33,Vorinostat,10.0,,,,24,2.0,,D,single,MCF7
+B4300,MCF7,#33,Vorinostat,10.0,,,,24,3.0,,D,single,MCF7
+B326,MCF7,#33,Vorinostat,10.0,,,,48,1.0,,D,single,MCF7
+B2321,MCF7,#33,Vorinostat,10.0,,,,48,2.0,,D,single,MCF7
+B4321,MCF7,#33,Vorinostat,10.0,,,,48,3.0,,D,single,MCF7
+B284,MCF7,#33,Vorinostat,10.0,,,,6,1.0,,D,single,MCF7
+B2279,MCF7,#33,Vorinostat,10.0,,,,6,2.0,,D,single,MCF7
+B4279,MCF7,#33,Vorinostat,10.0,,,,6,3.0,,D,single,MCF7
+B306,MCF7,#34,Dasatinib Hydrate,10.0,,,,24,1.0,,D,single,MCF7
+B2301,MCF7,#34,Dasatinib Hydrate,10.0,,,,24,2.0,,D,single,MCF7
+B4301,MCF7,#34,Dasatinib Hydrate,10.0,,,,24,3.0,,D,single,MCF7
+B327,MCF7,#34,Dasatinib Hydrate,10.0,,,,48,1.0,,D,single,MCF7
+B2322,MCF7,#34,Dasatinib Hydrate,10.0,,,,48,2.0,,D,single,MCF7
+B4322,MCF7,#34,Dasatinib Hydrate,10.0,,,,48,3.0,,D,single,MCF7
+B285,MCF7,#34,Dasatinib Hydrate,10.0,,,,6,1.0,,D,single,MCF7
+B2280,MCF7,#34,Dasatinib Hydrate,10.0,,,,6,2.0,,D,single,MCF7
+B4280,MCF7,#34,Dasatinib Hydrate,10.0,,,,6,3.0,,D,single,MCF7
+B309,MCF7,#37,Sorafenib Tosylate,10.0,,,,24,1.0,,D,single,MCF7
+B2304,MCF7,#37,Sorafenib Tosylate,10.0,,,,24,2.0,,D,single,MCF7
+B4304,MCF7,#37,Sorafenib Tosylate,10.0,,,,24,3.0,,D,single,MCF7
+B330,MCF7,#37,Sorafenib Tosylate,10.0,,,,48,1.0,,D,single,MCF7
+B2325,MCF7,#37,Sorafenib Tosylate,10.0,,,,48,2.0,,D,single,MCF7
+B4325,MCF7,#37,Sorafenib Tosylate,10.0,,,,48,3.0,,D,single,MCF7
+B288,MCF7,#37,Sorafenib Tosylate,10.0,,,,6,1.0,,D,single,MCF7
+B2283,MCF7,#37,Sorafenib Tosylate,10.0,,,,6,2.0,,D,single,MCF7
+B4283,MCF7,#37,Sorafenib Tosylate,10.0,,,,6,3.0,,D,single,MCF7
+B310,MCF7,#38,Erlotinib Hydrochloride,10.0,,,,24,1.0,,D,single,MCF7
+B2305,MCF7,#38,Erlotinib Hydrochloride,10.0,,,,24,2.0,,D,single,MCF7
+B4305,MCF7,#38,Erlotinib Hydrochloride,10.0,,,,24,3.0,,D,single,MCF7
+B331,MCF7,#38,Erlotinib Hydrochloride,10.0,,,,48,1.0,,D,single,MCF7
+B2326,MCF7,#38,Erlotinib Hydrochloride,10.0,,,,48,2.0,,D,single,MCF7
+B4326,MCF7,#38,Erlotinib Hydrochloride,10.0,,,,48,3.0,,D,single,MCF7
+B289,MCF7,#38,Erlotinib Hydrochloride,10.0,,,,6,1.0,,D,single,MCF7
+B2284,MCF7,#38,Erlotinib Hydrochloride,10.0,,,,6,2.0,,D,single,MCF7
+B4284,MCF7,#38,Erlotinib Hydrochloride,10.0,,,,6,3.0,,D,single,MCF7
+B316,MCF7,#44,Bexarotene,10.0,,,,24,1.0,,D,single,MCF7
+B2311,MCF7,#44,Bexarotene,10.0,,,,24,2.0,,D,single,MCF7
+B4311,MCF7,#44,Bexarotene,10.0,,,,24,3.0,,D,single,MCF7
+B337,MCF7,#44,Bexarotene,10.0,,,,48,1.0,,D,single,MCF7
+B2332,MCF7,#44,Bexarotene,10.0,,,,48,2.0,,D,single,MCF7
+B4332,MCF7,#44,Bexarotene,10.0,,,,48,3.0,,D,single,MCF7
+B295,MCF7,#44,Bexarotene,10.0,,,,6,1.0,,D,single,MCF7
+B2290,MCF7,#44,Bexarotene,10.0,,,,6,2.0,,D,single,MCF7
+B4290,MCF7,#44,Bexarotene,10.0,,,,6,3.0,,D,single,MCF7
+B362,MCF7,#46,Aminolevulinic Acid Hydrochloride,10.0,,,,24,1.0,,D,single,MCF7
+B2313,MCF7,#46,Aminolevulinic Acid Hydrochloride,10.0,,,,24,2.0,,D,single,MCF7
+B4313,MCF7,#46,Aminolevulinic Acid Hydrochloride,10.0,,,,24,3.0,,D,single,MCF7
+B383,MCF7,#46,Aminolevulinic Acid Hydrochloride,10.0,,,,48,1.0,,D,single,MCF7
+B2334,MCF7,#46,Aminolevulinic Acid Hydrochloride,10.0,,,,48,2.0,,D,single,MCF7
+B4334,MCF7,#46,Aminolevulinic Acid Hydrochloride,10.0,,,,48,3.0,,D,single,MCF7
+B341,MCF7,#46,Aminolevulinic Acid Hydrochloride,10.0,,,,6,1.0,,D,single,MCF7
+B2292,MCF7,#46,Aminolevulinic Acid Hydrochloride,10.0,,,,6,2.0,,D,single,MCF7
+B4292,MCF7,#46,Aminolevulinic Acid Hydrochloride,10.0,,,,6,3.0,,D,single,MCF7
+B363,MCF7,#47,Temozolomide,10.0,,,,24,1.0,,D,single,MCF7
+B2358,MCF7,#47,Temozolomide,10.0,,,,24,2.0,,D,single,MCF7
+B4358,MCF7,#47,Temozolomide,10.0,,,,24,3.0,,D,single,MCF7
+B384,MCF7,#47,Temozolomide,10.0,,,,48,1.0,,D,single,MCF7
+B2379,MCF7,#47,Temozolomide,10.0,,,,48,2.0,,D,single,MCF7
+B4379,MCF7,#47,Temozolomide,10.0,,,,48,3.0,,D,single,MCF7
+B342,MCF7,#47,Temozolomide,10.0,,,,6,1.0,,D,single,MCF7
+B2337,MCF7,#47,Temozolomide,10.0,,,,6,2.0,,D,single,MCF7
+B4337,MCF7,#47,Temozolomide,10.0,,,,6,3.0,,D,single,MCF7
+B365,MCF7,#51,Raloxifene Hydrochloride,10.0,,,,24,1.0,,D,single,MCF7
+B2360,MCF7,#51,Raloxifene Hydrochloride,10.0,,,,24,2.0,,D,single,MCF7
+B4360,MCF7,#51,Raloxifene Hydrochloride,10.0,,,,24,3.0,,D,single,MCF7
+B386,MCF7,#51,Raloxifene Hydrochloride,10.0,,,,48,1.0,,D,single,MCF7
+B2381,MCF7,#51,Raloxifene Hydrochloride,10.0,,,,48,2.0,,D,single,MCF7
+B4381,MCF7,#51,Raloxifene Hydrochloride,10.0,,,,48,3.0,,D,single,MCF7
+B344,MCF7,#51,Raloxifene Hydrochloride,10.0,,,,6,1.0,,D,single,MCF7
+B2339,MCF7,#51,Raloxifene Hydrochloride,10.0,,,,6,2.0,,D,single,MCF7
+B4339,MCF7,#51,Raloxifene Hydrochloride,10.0,,,,6,3.0,,D,single,MCF7
+B368,MCF7,#55,Anastrozole,10.0,,,,24,1.0,,D,single,MCF7
+B2363,MCF7,#55,Anastrozole,10.0,,,,24,2.0,,D,single,MCF7
+B4363,MCF7,#55,Anastrozole,10.0,,,,24,3.0,,D,single,MCF7
+B389,MCF7,#55,Anastrozole,10.0,,,,48,1.0,,D,single,MCF7
+B2384,MCF7,#55,Anastrozole,10.0,,,,48,2.0,,D,single,MCF7
+B4384,MCF7,#55,Anastrozole,10.0,,,,48,3.0,,D,single,MCF7
+B347,MCF7,#55,Anastrozole,10.0,,,,6,1.0,,D,single,MCF7
+B2342,MCF7,#55,Anastrozole,10.0,,,,6,2.0,,D,single,MCF7
+B4342,MCF7,#55,Anastrozole,10.0,,,,6,3.0,,D,single,MCF7
+B240,MCF7,#6,Selumetinib sulfate,10.0,,,,24,1.0,,D,single,MCF7
+B2235,MCF7,#6,Selumetinib sulfate,10.0,,,,24,2.0,,D,single,MCF7
+B261,MCF7,#6,Selumetinib sulfate,10.0,,,,48,1.0,,D,single,MCF7
+B2256,MCF7,#6,Selumetinib sulfate,10.0,,,,48,2.0,,D,single,MCF7
+B4256,MCF7,#6,Selumetinib sulfate,10.0,,,,48,3.0,,D,single,MCF7
+B219,MCF7,#6,Selumetinib sulfate,10.0,,,,6,1.0,,D,single,MCF7
+B2214,MCF7,#6,Selumetinib sulfate,10.0,,,,6,2.0,,D,single,MCF7
+B4214,MCF7,#6,Selumetinib sulfate,10.0,,,,6,3.0,,D,single,MCF7
+B379,MCF7,#69,5-Fluorouracil,10.0,,,,24,1.0,,D,single,MCF7
+B2374,MCF7,#69,5-Fluorouracil,10.0,,,,24,2.0,,D,single,MCF7
+B4374,MCF7,#69,5-Fluorouracil,10.0,,,,24,3.0,,D,single,MCF7
+B400,MCF7,#69,5-Fluorouracil,10.0,,,,48,1.0,,D,single,MCF7
+B2395,MCF7,#69,5-Fluorouracil,10.0,,,,48,2.0,,D,single,MCF7
+B4395,MCF7,#69,5-Fluorouracil,10.0,,,,48,3.0,,D,single,MCF7
+B358,MCF7,#69,5-Fluorouracil,10.0,,,,6,1.0,,D,single,MCF7
+B2353,MCF7,#69,5-Fluorouracil,10.0,,,,6,2.0,,D,single,MCF7
+B4353,MCF7,#69,5-Fluorouracil,10.0,,,,6,3.0,,D,single,MCF7
+B380,MCF7,#70,Cyclophosphamide,10.0,,,,24,1.0,,D,single,MCF7
+B2375,MCF7,#70,Cyclophosphamide,10.0,,,,24,2.0,,D,single,MCF7
+B4375,MCF7,#70,Cyclophosphamide,10.0,,,,24,3.0,,D,single,MCF7
+B401,MCF7,#70,Cyclophosphamide,10.0,,,,48,1.0,,D,single,MCF7
+B2396,MCF7,#70,Cyclophosphamide,10.0,,,,48,2.0,,D,single,MCF7
+B4396,MCF7,#70,Cyclophosphamide,10.0,,,,48,3.0,,D,single,MCF7
+B359,MCF7,#70,Cyclophosphamide,10.0,,,,6,1.0,,D,single,MCF7
+B2354,MCF7,#70,Cyclophosphamide,10.0,,,,6,2.0,,D,single,MCF7
+B4354,MCF7,#70,Cyclophosphamide,10.0,,,,6,3.0,,D,single,MCF7
+B414,MCF7,#73,Chlorambucil,10.0,,,,24,1.0,,D,single,MCF7
+B2408,MCF7,#73,Chlorambucil,10.0,,,,24,2.0,,D,single,MCF7
+B4408,MCF7,#73,Chlorambucil,10.0,,,,24,3.0,,D,single,MCF7
+B2415,MCF7,#73,Chlorambucil,10.0,,,,48,1.0,,D,single,MCF7
+B4415,MCF7,#73,Chlorambucil,10.0,,,,48,2.0,,D,single,MCF7
+B406,MCF7,#73,Chlorambucil,10.0,,,,6,1.0,,D,single,MCF7
+B2401,MCF7,#73,Chlorambucil,10.0,,,,6,2.0,,D,single,MCF7
+B4401,MCF7,#73,Chlorambucil,10.0,,,,6,3.0,,D,single,MCF7

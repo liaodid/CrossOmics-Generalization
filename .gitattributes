@@ -1,0 +1,2 @@
+# PDF files must remain byte-for-byte intact on Windows and other platforms.
+*.pdf binary

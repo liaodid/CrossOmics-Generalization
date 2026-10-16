@@ -1,0 +1,30 @@
+\section{数据、Benchmark 与评估}
+% 6
+\begin{frame}[t]{数据、任务设置与评估协议}
+\vspace{.05cm}
+\centering
+\begin{tikzpicture}[ch/.style={chip,text width=3.3cm,minimum height=.62cm},
+  tt/.style={font=\small\bfseries,text=DarkBlue,text width=3.3cm,align=center}]
+ \node[tt] (t1) at (0,0) {\faDatabase\enspace 数据来源};
+ \node[ch,below=.28cm of t1] (c11) {Perturb-seq · Cell 2022\\\color{Muted}基因组规模 CRISPRi 扰动};
+ \node[ch,below=.18cm of c11] (c12) {扰动图谱 DE 分析 · 2025\\\color{Muted}多数据集、跨背景比较};
+ \node[ch,below=.18cm of c12] (c13) {VCC 2025 数据 · 已公开\\\color{Muted}本项目尚未下载审计};
+ \node[tt] (t2) at (5.05,0) {\faBullseye\enspace 任务设置};
+ \node[ch,below=.28cm of t2] (c21) {VCC 2026\\\color{Muted}目标背景只有对照数据};
+ \node[ch,below=.18cm of c21] (c22) {按细胞背景划分\\\color{Muted}同一数据集不跨集合};
+ \node[ch,below=.18cm of c22] (c23) {扰动列表与基因空间\\\color{Muted}实验前固定};
+ \node[tt] (t3) at (10.1,0) {\faBalanceScale\enspace 评估协议};
+ \node[ch,below=.28cm of t3] (c31) {Systema · 2026\\\color{Muted}系统性变化 vs 扰动特异};
+ \node[ch,below=.18cm of c31] (c32) {线性基线评测 · 2025\\\color{Muted}基线与划分方案};
+ \node[ch,below=.18cm of c32] (c33) {自建评分脚本\\\color{Muted}实验前冻结};
+ \begin{scope}[on background layer]
+  \node[lane,fit=(t1)(c13)] (L1) {};
+  \node[lane,fit=(t2)(c23)] (L2) {};
+  \node[lane,fit=(t3)(c33)] (L3) {};
+ \end{scope}
+ \draw[flow] (L1.east) -- (L2.west);
+ \draw[flow] (L2.east) -- (L3.west);
+\end{tikzpicture}
+\remark{\ico{\faLink}\enspace 三者独立选择：换数据不必换协议，换任务设置也不必重写评分脚本。}
+\source{[2,3,10,11,13]；VCC 2025 数据说明见 literature-review.md。本次拟借鉴协议并构建小规模任务集，不宣称已有统一基准。}
+\end{frame}

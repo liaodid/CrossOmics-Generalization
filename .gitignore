@@ -44,3 +44,16 @@ tmp/literature/
 # mac/linux
 .DS_Store
 .nfs*
+
+# 本地缓存和原始数据
+/tmp/
+/baseline/proteintalks/*.xlsx
+
+# LaTeX 编译中间文件
+/output/**/*.log
+/output/**/*.aux
+/output/**/*.nav
+/output/**/*.snm
+/output/**/*.toc
+/output/**/*.out
+/output/**/*.synctex.gz

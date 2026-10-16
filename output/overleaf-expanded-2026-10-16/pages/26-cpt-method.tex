@@ -1,0 +1,23 @@
+\begin{frame}[t]{跨模态继续预训练：将蛋白丰度接入 RNA 模型}
+\tagline{Burq et al.，bioRxiv v1，2026-08-19；模型规模 70M（约 7,000 万参数）。}
+\centering
+\begin{tikzpicture}[n/.style={box,text width=3.55cm,minimum height=1.18cm,inner sep=8pt}]
+\node[n] (a) at (0,0) {\textbf{已有 Tahoe-x1 70M}\\\scriptsize 加载 RNA 预训练权重};
+\node[n,fill=PaleTeal] (b) at (4.7,0) {\textbf{蛋白组继续预训练}\\\scriptsize 48,843 样本，1 epoch};
+\node[n] (c) at (9.4,0) {\textbf{通用分子表示}\\\scriptsize 基因级 / 样本级下游评估};
+\draw[flow] (a)--(b);\draw[flow] (b)--(c);
+\end{tikzpicture}
+\vspace{.20cm}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{.48\textwidth}
+\subhead{统一身份与数值编码}
+\bodyfont 蛋白 $\rightarrow$ 对应基因 token；丰度 $\rightarrow$ expression value。每个样本内部做分位数分箱，减轻不同来源强度尺度的差异。
+\end{column}
+\begin{column}{.48\textwidth}
+\subhead{沿用自监督训练方案}
+\bodyfont 采用原 Tahoe-x1 training recipe；展示原始与批次校正两种视图，称为 format-aware augmentation。评估用药物扰动样本从继续预训练中排除。
+\end{column}
+\end{columns}
+\remark{\textbf{不要求 RNA--蛋白样本配对，也未按相关性聚类。}连接来自共同基因身份与兼容输入格式。}
+\source{[25] §2.2。沿用已有 checkpoint，而非本研究重新从头训练 RNA 模型；70M = 约 7,000 万参数。论文未完整列出本轮优化器、学习率和 masking 配置。}
+\end{frame}

@@ -1,0 +1,15 @@
+\section{补充文献：数据规模与跨组学预训练}
+\begin{frame}[t]{四篇论文的数据类型与规模口径}
+\bodyfont\renewcommand{\arraystretch}{1.10}
+\begin{tabularx}{\textwidth}{@{}P{2.7cm}Y@{}}
+\toprule
+\textbf{工作}&\textbf{数据类型与主要规模}\\\midrule
+UniPert--G2CP\newline Cell 2026 & 分子注释：53,963 个化合物--靶点互作；响应数据：LINCS 5 个细胞系 / 978 转录本，以及 CPJUMP1 形态特征\\
+State\newline Cell 2026 & 单细胞 RNA：SE 用 1.67 亿细胞学习表示；ST 用超过 1 亿扰动细胞学习状态转移，两部分来源可重叠\\
+ProteinTalks\newline Nature 2026 & DIA-MS 蛋白丰度：PTDS 有 16,311 个文件，覆盖 5,585 个蛋白群组、超过 3,800 万个定量值\\
+跨模态 CPT\newline bioRxiv 2026 & 蛋白组：440 来源 / 48,843 样本；另设 ARCHS4 bulk RNA 对照，继续预训练已有 RNA 模型\\
+\bottomrule
+\end{tabularx}
+\remark{前三项采用所提供的正式版；CPT 为 2026-08-19 的 v1 预印本。不同计量单位不宜直接比较；规模均为论文报告。}
+\source{[22--25] 正文、STAR Methods / Methods；分项数据和统计边界见后续页面与 research/data-audit.md。}
+\end{frame}
