@@ -55,3 +55,11 @@
 
 模型的输入是该细胞系 0 h 那一行的表达，预测目标是该实验 6、24、48 h 三行的表达。
 只有三个时间点都齐全的实验才会被使用。
+
+## 本地 PDF 版本与本轮数据核查（2026-10-15）
+
+- 新下载的 [proteintalks.pdf](../../pdf/proteintalks.pdf) 是 **bioRxiv 2025 v1**，题为 *A perturbation proteomics-based foundation model for virtual cell construction*，DOI [10.1101/2025.02.07.637070](https://doi.org/10.1101/2025.02.07.637070)，不是 Nature 2026 正式版。
+- 预印本的数据说明给出 PTDS 门户 `db.prottalks.com`；其 PDX 相关图注还描述蛋白组预训练后使用转录组微调。PDX 转录组不等同于同条件配对的药物 RNA–蛋白矩阵。
+- 本文上方 PTDS/mtPTDS/PTPC 的详细数字及七文件格式沿用此前正式版与公开代码核查；本次没有用旧预印本覆盖这些新版本记录，也没有重新检查在线门户或获得训练矩阵。
+- **当前本地只有 PDF 与文档，ProteinTalks 数据获取状态仍为待获取。** 收到数据后需额外登记版本、蛋白标识、缺失掩码、细胞系、药物结构、剂量、时间和重复/批次关系。
+- [论文介绍](../../docs/literature/proteintalks.md)；其余已下载论文的数据入口见 [data 总索引](../README.md#已下载论文与数据文档对应表)。

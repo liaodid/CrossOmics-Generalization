@@ -38,6 +38,8 @@ mmseqs_storage/
 
 # papers (copyrighted PDFs stay local; citations live in docs/references.md)
 docs/papers/
+pdf/*.pdf
+tmp/literature/
 
 # mac/linux
 .DS_Store

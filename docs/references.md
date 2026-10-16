@@ -1,10 +1,19 @@
 # 参考文献
 
+## 2026-10-15 首轮扩展阅读
+
+已筛选 18 篇与项目最相关的论文，下载 16 篇可验证 PDF，并为全部 18 篇编写中文介绍（未取得 PDF 的两篇标为初步笔记）。
+请先看 [阅读索引与创新性分析](literature/README.md)、[详细表格](literature.csv) 和 [手动下载清单](../pdf/MANUAL_DOWNLOADS.md)。
+本次按项目成员要求，PDF 实际放在根目录 `pdf/`；下文 `docs/papers/` 是早期目录约定，核心论文表中的旧文件名不是本次下载状态。
+ProteinTalks、UniPert-G2CP、State、Tahoe-100M 当前获取的是作者预印本，totalVI 为作者接受稿；具体版本以新清单为准。
+
+需要优先补读 [TransPro](literature/transpro.md) 和 [MultiPert](literature/multipert.md)：它们已经涉及 RNA 与蛋白组的扰动建模，不能笼统声称这类联合建模没有先例。
+
 **论文清单以 [papers.csv](papers.csv) 为准**：一行一篇，列出方法名、标题、作者、年份、期刊、DOI、本地 PDF 文件名、
 单位、组学、在项目中的角色、仓库内对应目录、代码和数据链接。可以直接用 Excel 或 pandas 打开。
 本页是便于阅读的摘要。新增论文时先改 CSV，再视需要更新本页。
 
-PDF 放在本地的 `docs/papers/`，出于版权和体积原因不提交到 Git（见 `.gitignore`）。
+PDF 原约定放在本地的 `docs/papers/`，本次统一放在根目录 `pdf/`，出于版权和体积原因不提交到 Git（见 `.gitignore`）。
 新成员按 DOI 自行下载到该目录，并按 CSV 中 `pdf_file` 列的名字保存。
 
 ## 核心论文

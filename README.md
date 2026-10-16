@@ -15,7 +15,7 @@
 |---|---|
 | 生物学术语（面向 CS 背景） | [docs/glossary.md](docs/glossary.md) |
 | 项目目标、已知事实、待定事项 | [docs/findings.md](docs/findings.md) |
-| 相关论文与链接 | [docs/papers.csv](docs/papers.csv)（论文清单：方法名、标题、DOI、PDF 文件名、对应目录），[docs/references.md](docs/references.md)（摘要） |
+| 相关论文与链接 | [18 篇论文阅读索引](docs/literature/README.md)（逐篇中文介绍与优先级），[docs/papers.csv](docs/papers.csv)（总清单），[手动下载入口](pdf/MANUAL_DOWNLOADS.md) |
 | 有哪些对比方法 | [baseline/README.md](baseline/README.md) |
 | 有哪些数据、能否获取 | [data/README.md](data/README.md) |
 | 分析脚本 | [script/README.md](script/README.md) |
@@ -62,7 +62,10 @@ CrossOmics-Generalization/
     ├── papers.csv               # 论文清单：方法名 ↔ 标题 ↔ DOI ↔ 本地 PDF ↔ 仓库目录
     ├── references.md            # 参考文献摘要
     ├── collaboration.md         # 协作约定
-    └── papers/                  # 论文 PDF（仅本地，不提交）
+    ├── papers/                  # 早期约定的 PDF 位置（本次未使用）
+    └── literature/              # 18 篇论文中文介绍与阅读索引
+
+pdf/                            # 本次下载的论文 PDF（仅本地，不提交）与下载状态
 ```
 
 ## 进度
@@ -76,7 +79,7 @@ CrossOmics-Generalization/
 - [x] 核对 ProteinTalks 细胞系与 LINCS 的重合：A375、MCF7 两边都有（`script/lincs_cell_line_coverage.sh`）
 - [ ] 定义任务、测试集与指标（[待定事项](docs/findings.md#待定事项) 第 2 项）
 - [ ] 获取 ProteinTalks 训练数据（正在与西湖作者联系）
-- [ ] 系统文献检索：联合两种组学的扰动模型是否已有先例
+- [x] 完成首轮 18 篇相关文献检索：已找到 TransPro、MultiPert 等跨组学先例（尚非穷尽性检索）
 - [ ] 选定主线细胞系，整理转录组与蛋白组数据
 - [ ] 跑通基线，建立统一评价协议
 - [ ] 实现并评估联合训练模型
