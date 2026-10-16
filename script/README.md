@@ -16,6 +16,7 @@
 | [collect_literature.py](collect_literature.py) | 按脚本内的 DOI 列表下载论文 PDF 到 `pdf/`，用 pypdf 校验文件确实是 PDF，并记录来源和 SHA256（`pdf/download_manifest.json`） | 需要联网和 `pypdf`；缓存写在 `tmp/literature/` |
 | [retry_literature.py](retry_literature.py) | 对上一步没下载成功的论文，换作者主页或出版社链接重试，不覆盖已有 PDF | 同上 |
 | [build_literature_docs.py](build_literature_docs.py) | 根据整理好的笔记（`docs/literature_notes.json`）和下载清单，生成 `docs/literature/` 下的阅读索引和逐篇介绍 | 只读本地文件 |
+| [make_weekly_figures.py](make_weekly_figures.py) | 生成 Week 1 周汇报的 9 张图、对应数据表和 `summary.json`，输出到 `reports/weekly-2026-10-16/`。数据来自仓库内文件；从论文抄录的数字集中写在脚本开头的 `FACTS` 中并注明出处 | 需要 pandas、matplotlib 和 Noto Sans CJK 字体；先运行 `audit_lincs_metadata.sh` 缓存 LINCS 元数据。在 Vulcan 上约 1 分钟，需通过 Slurm 运行 |
 
 用法：
 
@@ -31,3 +32,12 @@ python script/build_literature_docs.py
 ```
 
 PTDS 与 LINCS、Tahoe‑100M 的药物对齐目前写在 `colab/` 的 notebook 里，结果放在 [reports/](../reports/README.md)。
+
+### 在 Vulcan 上重新生成周汇报图表
+
+```bash
+# 在仓库根目录执行；画图放进 Slurm 作业，不在登录节点上跑
+mkdir -p logs && sbatch script/slurm/make_weekly_figures.sbatch
+```
+
+生成后把 `reports/weekly-<日期>/figures/*.png` 复制到 Overleaf 幻灯片项目的 `figures/` 目录。

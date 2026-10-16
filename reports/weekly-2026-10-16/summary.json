@@ -1,0 +1,199 @@
+{
+  "lincs_counts": {
+    "MCF7": {
+      "trt_cp": 42049,
+      "trt_xpr": 705,
+      "trt_sh": 19669
+    },
+    "A375": {
+      "trt_cp": 27503,
+      "trt_xpr": 353,
+      "trt_sh": 14800
+    },
+    "HepG2": {
+      "trt_cp": 7549,
+      "trt_xpr": 0,
+      "trt_sh": 12868
+    },
+    "HCT116": {
+      "trt_cp": 363,
+      "trt_xpr": 0,
+      "trt_sh": 0
+    },
+    "BT20": {
+      "trt_cp": 2822,
+      "trt_xpr": 0,
+      "trt_sh": 0
+    },
+    "HS578T": {
+      "trt_cp": 2812,
+      "trt_xpr": 0,
+      "trt_sh": 0
+    },
+    "MDA-MB-231": {
+      "trt_cp": 2816,
+      "trt_xpr": 0,
+      "trt_sh": 0
+    },
+    "BT549": {
+      "trt_cp": 0,
+      "trt_xpr": 0,
+      "trt_sh": 0
+    },
+    "MDA-MB-468": {
+      "trt_cp": 0,
+      "trt_xpr": 0,
+      "trt_sh": 0
+    },
+    "HCC1806": {
+      "trt_cp": 0,
+      "trt_xpr": 0,
+      "trt_sh": 0
+    },
+    "HCC1143": {
+      "trt_cp": 0,
+      "trt_xpr": 0,
+      "trt_sh": 0
+    },
+    "MDA-MB-453": {
+      "trt_cp": 0,
+      "trt_xpr": 0,
+      "trt_sh": 0
+    },
+    "NCI-H1975": {
+      "trt_cp": 0,
+      "trt_xpr": 0,
+      "trt_sh": 0
+    },
+    "NCI-H2170": {
+      "trt_cp": 0,
+      "trt_xpr": 0,
+      "trt_sh": 0
+    },
+    "Panc 10.05": {
+      "trt_cp": 0,
+      "trt_xpr": 0,
+      "trt_sh": 0
+    }
+  },
+  "literature": {
+    "papers": 18,
+    "by_row": {
+      "扰动预测模型": 9,
+      "数据资源": 4,
+      "跨组学先例": 4,
+      "评价方法": 1
+    },
+    "involving_protein": 6
+  },
+  "landscape": {
+    "lincs_cell_lines_with_compounds": 83,
+    "lincs_unique_compounds": 21299
+  },
+  "ptds_lincs": {
+    "ptds_single_drugs": 63,
+    "ptds_drugs_resolved": 62,
+    "ptds_drugs_matched_lincs_mcf7": 20,
+    "ptds_drugs_strict_24h_10uM": 20,
+    "rna_signatures_total": 200,
+    "rna_signatures_24h_10uM": 200,
+    "rna_dose_time_combinations": {
+      "24 h / 10 uM": 200
+    },
+    "ptds_samples_by_time_10uM": {
+      "6": 58,
+      "24": 58,
+      "48": 58
+    },
+    "ptds_samples_24h_10uM_matched_drugs": 58,
+    "ptds_dose_unit_source": "ProteinTalks Methods: single-drug experiments used a standard 10 µM"
+  },
+  "facts_from_papers": {
+    "landscape": [
+      [
+        "Tahoe-100M",
+        "RNA",
+        50,
+        380,
+        "State 正式版口径：380 种药物"
+      ],
+      [
+        "PTDS",
+        "PROT",
+        18,
+        63,
+        "ProteinTalks：63 种单药（另有 59 种组合）"
+      ],
+      [
+        "mtPTDS",
+        "PROT",
+        3,
+        55,
+        "ProteinTalks：55 种单药，11 个时间点"
+      ],
+      [
+        "PTPC",
+        "PROT",
+        5,
+        708,
+        "ProteinTalks：708 种化合物"
+      ],
+      [
+        "HepG2 蛋白组\n(MSV000101671)",
+        "PROT",
+        1,
+        172,
+        "Jiang et al. 2026：172 种化合物"
+      ],
+      [
+        "HepG2 蛋白组\n(Basu 2026)",
+        "PROT",
+        1,
+        282,
+        "Basu et al. 2026：78 种 FDA 药 + 204 个降解剂"
+      ],
+      [
+        "GSE51952",
+        "RNA",
+        1,
+        22,
+        "HepG2 芯片：22 种药"
+      ]
+    ],
+    "ptpc_benchmark": [
+      [
+        "ProteinTalks",
+        "PROT",
+        0.41,
+        0.77
+      ],
+      [
+        "GeneCompass",
+        "RNA",
+        0.28,
+        0.72
+      ],
+      [
+        "Geneformer",
+        "RNA",
+        0.23,
+        0.56
+      ],
+      [
+        "UCE",
+        "RNA",
+        0.19,
+        0.54
+      ]
+    ],
+    "hepg2": {
+      "proteome_drugs": 170,
+      "gse51952_drugs": 22,
+      "gse51952_name_overlap": 1,
+      "gse51952_same_dose": 0,
+      "lincs_p1_24h_10uM_compounds": 176,
+      "lincs_p1_name_overlap": 0,
+      "lincs_p2_24h_10uM_compounds": 268
+    }
+  }
+}

@@ -1,0 +1,5 @@
+model,omics,AUPRC,AUROC
+ProteinTalks,PROT,0.41,0.77
+GeneCompass,RNA,0.28,0.72
+Geneformer,RNA,0.23,0.56
+UCE,RNA,0.19,0.54

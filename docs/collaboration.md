@@ -67,6 +67,6 @@ PR 说明应包含修改目的、验证方式和受影响的实验。
 | 论文 | PDF 放根目录 `pdf/`（不提交）；在 [papers.csv](papers.csv) 加一行，`pdf_file` 填 PDF 文件名、`pdf_version` 写清是预印本还是正式版；逐篇介绍放 `docs/literature/<key>.md` | `key` 用小写短横线，PDF 命名为 `<key>.pdf`，如 `proteintalks.pdf` |
 | 某篇论文所用数据的说明 | `data/<方法名>/README.md`，并在 `data/README.md` 的“论文与数据文档对应表”登记 | 与 `papers.csv` 的 `key` 一致，如 `data/gears/` |
 | 分析结果（小型 CSV/JSON/图） | `reports/<分析名>-<日期>/`，附 `summary.json` 或 README，见 [reports/README.md](../reports/README.md) | 如 `reports/ptds-unipert-2026-10-16/` |
-| 汇报材料（幻灯片、综述） | `output/<名称>-<日期>/`，附 README，见 [output/README.md](../output/README.md) | 如 `output/overleaf-expanded-2026-10-16/` |
+| 汇报幻灯片 | **不放进本仓库**，放在独立的 Overleaf 项目中（避免两个仓库嵌套）；幻灯片用到的图由 `script/` 中的脚本生成，图和数据表放 `reports/weekly-<日期>/` | 如 `script/make_weekly_figures.py` → `reports/weekly-2026-10-16/` |
 
 上游代码放入 `baseline/` 后保持原样；必须修改时单独提交，并在该 baseline 的 README 中记录改动。

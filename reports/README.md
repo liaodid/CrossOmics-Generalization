@@ -18,6 +18,8 @@
 |---|---|---|---|
 | [ptds-unipert-2026-10-16/](ptds-unipert-2026-10-16/) | PTDS（ProteinTalks 主数据集）与 UniPert‑G2CP 作者的 LINCS MCF7 子集，按化学结构做药物对齐 | [colab/ptds_unipert_lincs_alignment_drive.ipynb](../colab/ptds_unipert_lincs_alignment_drive.ipynb) | MCF7 上 63 种 PTDS 药物中有 20 种在 LINCS 中也有签名：200 条 RNA 签名、174 个蛋白样本，不限剂量和时间；Verteporfin 待复核。见 [findings 第 11 节](../docs/findings.md) |
 
+| [weekly-2026-10-16/](weekly-2026-10-16/) | Week 1 组会周汇报用的 9 张图（`figures/`）、每张图背后的数据表（`tables/`）和 `summary.json` | [script/make_weekly_figures.py](../script/make_weekly_figures.py) | 文献 18 篇的分类；数据集全景；细胞系重合热图；LINCS 覆盖；HepG2 配对尝试；PTDS × LINCS 漏斗与条件图（24 h / 10 µM 两边一致）；20 种药的数据量；ProteinTalks 论文报告的跨癌种结果 |
+
 ### ptds-unipert-2026-10-16 里的文件
 
 | 文件 | 内容 |

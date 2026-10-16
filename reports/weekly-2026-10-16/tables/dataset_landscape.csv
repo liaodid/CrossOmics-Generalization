@@ -1,0 +1,11 @@
+dataset,omics,n_cell_lines,n_compounds,note
+LINCS L1000,RNA,83,21299,GSE92742 + GSE70138 元数据计算
+Tahoe-100M,RNA,50,380,State 正式版口径：380 种药物
+PTDS,PROT,18,63,ProteinTalks：63 种单药（另有 59 种组合）
+mtPTDS,PROT,3,55,ProteinTalks：55 种单药，11 个时间点
+PTPC,PROT,5,708,ProteinTalks：708 种化合物
+"HepG2 蛋白组
+(MSV000101671)",PROT,1,172,Jiang et al. 2026：172 种化合物
+"HepG2 蛋白组
+(Basu 2026)",PROT,1,282,Basu et al. 2026：78 种 FDA 药 + 204 个降解剂
+GSE51952,RNA,1,22,HepG2 芯片：22 种药

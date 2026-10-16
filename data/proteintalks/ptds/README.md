@@ -32,7 +32,7 @@ PTDS 即 ProteinTalks Dataset（按 mtPTDS 的全称推断）。总体来源、�
 
 HCC 系列、MDA‑MB‑453、MDA‑MB‑468、BT549、T47D 等，在 LINCS 中按常见命名没有找到。
 **MCF7 确实属于 PTDS**（2026‑10‑16 由 PTDS 样本表确认）。按化学结构匹配，MCF7 上有 20 种 PTDS 药物在 LINCS 中也有签名，
-共 200 条 RNA 签名、174 个 PTDS 样本（不限剂量和时间），详见 [docs/findings.md 第 11 节](../../../docs/findings.md) 和
+共 200 条 RNA 签名、174 个 PTDS 样本；其中 24 h / 10 µM 两边条件完全一致（58 个蛋白样本），详见 [docs/findings.md 第 11 节](../../../docs/findings.md) 和
 [reports/ptds-unipert-2026-10-16/](../../../reports/ptds-unipert-2026-10-16/)。它和 A375 是转录组 + 蛋白组联合训练最有价值的两个细胞系。
 
 ## 状态

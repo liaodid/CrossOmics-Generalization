@@ -1,0 +1,19 @@
+key,label,year,row,omics,priority
+chemcpa,chemCPA,2022,扰动预测模型,RNA,P0
+cpa,CPA,2023,扰动预测模型,RNA,P2
+gears,GEARS,2023,扰动预测模型,RNA,P1
+biolord,biolord,2024,扰动预测模型,RNA,P2
+perturbnet,PerturbNet,2025,扰动预测模型,RNA,P1
+proteintalks,ProteinTalks,2026,扰动预测模型,PROT,P0
+state,State,2026,扰动预测模型,RNA,P1
+unipert-g2cp,UniPert-G2CP,2026,扰动预测模型,RNA,P0
+xpert,XPert,2026,扰动预测模型,RNA,P1
+l1000,L1000/CMap,2017,数据资源,RNA,P1
+degrader-proteomics,降解剂蛋白组,2026,数据资源,PROT,P1
+robotic-proteomics,HepG2 机器人蛋白组,2026,数据资源,PROT,P1
+tahoe-100m,Tahoe-100M,2026,数据资源,RNA,P1
+linear-baselines,线性基线评测,2025,评价方法,RNA,P0
+totalvi,totalVI,2021,跨组学先例,BOTH,P2
+multivi,MultiVI,2023,跨组学先例,RNA,P1
+transpro,TransPro,2023,跨组学先例,BOTH,P0
+multipert,MultiPert,2026,跨组学先例,BOTH,P0
