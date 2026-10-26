@@ -1,0 +1,680 @@
+{
+  "parts": {
+    "relative_path": "results\\parts_946c2dde4ebaa65b-20261020T124048Z-1-001\\parts_946c2dde4ebaa65b",
+    "file_extensions": {
+      ".parquet": 6616,
+      ".csv": 3308,
+      ".npz": 3308
+    },
+    "total_bytes": 861208967,
+    "shards_with_pb": 3308,
+    "feature_counts": {
+      "62710": 3308
+    },
+    "selected_cells": 161217,
+    "unique_sample_cell_plate_groups": 119,
+    "cell_lines": {
+      "CVCL_0332": 161217
+    },
+    "unique_samples": 119,
+    "minimum_cells_per_group": 1,
+    "maximum_cells_per_group": 4394,
+    "groups_lt20_cells": 1,
+    "source_shards_without_local_pb": [
+      5,
+      7,
+      33,
+      47,
+      51,
+      55,
+      57,
+      59,
+      61,
+      63,
+      80,
+      95,
+      97,
+      108,
+      110,
+      123,
+      132,
+      134,
+      143,
+      152,
+      161,
+      172,
+      174,
+      187,
+      198,
+      200,
+      205,
+      207,
+      209,
+      216,
+      223,
+      230,
+      571,
+      1730,
+      2561,
+      2563,
+      2567,
+      2569,
+      2573,
+      2577,
+      2582,
+      2584,
+      2586,
+      2588,
+      2601,
+      2603,
+      2610,
+      2619,
+      2626,
+      2628,
+      2634,
+      2643,
+      2645,
+      2650,
+      2652,
+      2659,
+      2663,
+      2668,
+      2670,
+      2672,
+      2680,
+      2682,
+      2690,
+      2692,
+      2699,
+      2706,
+      2708,
+      2715,
+      2723,
+      2725,
+      2730,
+      2732,
+      2739,
+      2746,
+      2753,
+      2755,
+      2760,
+      2767,
+      2774,
+      2776
+    ],
+    "missing_shards_note": "May be no-match shards, failed extraction, or incomplete download; scan_status.json is required to distinguish.",
+    "missing_companion_files": [],
+    "metadata_present": {
+      "genes.csv": false,
+      "pseudobulk_raw_counts.h5ad": false,
+      "matched_conditions.csv": false,
+      "pseudobulk_control_pairs.csv": false,
+      "scan_status.json": false
+    },
+    "group_preview": [
+      {
+        "sample": "smp_1497",
+        "cell_line_id": "CVCL_0332",
+        "plate": "plate1",
+        "n_cells": 765,
+        "source_parts": 74
+      },
+      {
+        "sample": "smp_1499",
+        "cell_line_id": "CVCL_0332",
+        "plate": "plate1",
+        "n_cells": 1,
+        "source_parts": 1
+      },
+      {
+        "sample": "smp_1503",
+        "cell_line_id": "CVCL_0332",
+        "plate": "plate1",
+        "n_cells": 1123,
+        "source_parts": 74
+      },
+      {
+        "sample": "smp_1504",
+        "cell_line_id": "CVCL_0332",
+        "plate": "plate1",
+        "n_cells": 734,
+        "source_parts": 74
+      },
+      {
+        "sample": "smp_1505",
+        "cell_line_id": "CVCL_0332",
+        "plate": "plate1",
+        "n_cells": 868,
+        "source_parts": 72
+      },
+      {
+        "sample": "smp_1514",
+        "cell_line_id": "CVCL_0332",
+        "plate": "plate1",
+        "n_cells": 1103,
+        "source_parts": 73
+      },
+      {
+        "sample": "smp_1527",
+        "cell_line_id": "CVCL_0332",
+        "plate": "plate1",
+        "n_cells": 1174,
+        "source_parts": 73
+      },
+      {
+        "sample": "smp_1551",
+        "cell_line_id": "CVCL_0332",
+        "plate": "plate1",
+        "n_cells": 795,
+        "source_parts": 73
+      },
+      {
+        "sample": "smp_1578",
+        "cell_line_id": "CVCL_0332",
+        "plate": "plate1",
+        "n_cells": 718,
+        "source_parts": 72
+      },
+      {
+        "sample": "smp_1587",
+        "cell_line_id": "CVCL_0332",
+        "plate": "plate1",
+        "n_cells": 1251,
+        "source_parts": 74
+      },
+      {
+        "sample": "smp_1589",
+        "cell_line_id": "CVCL_0332",
+        "plate": "plate1",
+        "n_cells": 1181,
+        "source_parts": 73
+      },
+      {
+        "sample": "smp_1590",
+        "cell_line_id": "CVCL_0332",
+        "plate": "plate1",
+        "n_cells": 1388,
+        "source_parts": 73
+      }
+    ],
+    "cell_line_identity": {
+      "CVCL_0332": "Hs 578T / HS578T",
+      "source": "https://www.cellosaurus.org/CVCL_0332"
+    }
+  },
+  "protein_matrix": {
+    "bytes": 331411929,
+    "sheets": [
+      {
+        "name": "Sheet 1",
+        "sheetId": "1",
+        "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId1"
+      }
+    ],
+    "dimension": "A1:XCK5586",
+    "preview": [
+      {
+        "row": "1",
+        "stored_cells": 16313,
+        "first_cells": [
+          [
+            "A1",
+            "uniprotID"
+          ],
+          [
+            "B1",
+            "geneName"
+          ],
+          [
+            "C1",
+            "2407"
+          ],
+          [
+            "D1",
+            {
+              "unresolved_shared_string": 10420805
+            }
+          ],
+          [
+            "E1",
+            "581"
+          ],
+          [
+            "F1",
+            "1348"
+          ],
+          [
+            "G1",
+            "B3033"
+          ],
+          [
+            "H1",
+            "B1851"
+          ],
+          [
+            "I1",
+            "B257"
+          ],
+          [
+            "J1",
+            "B1079"
+          ],
+          [
+            "K1",
+            "D1619"
+          ],
+          [
+            "L1",
+            "476"
+          ]
+        ]
+      },
+      {
+        "row": "2",
+        "stored_cells": 5316,
+        "first_cells": [
+          [
+            "A2",
+            "Q8WUW1"
+          ],
+          [
+            "B2",
+            "BRK1"
+          ],
+          [
+            "E2",
+            "1673.5400"
+          ],
+          [
+            "F2",
+            "1132.9400"
+          ],
+          [
+            "I2",
+            "1041.4300"
+          ],
+          [
+            "J2",
+            " 367.5700"
+          ],
+          [
+            "L2",
+            "2463.8200"
+          ],
+          [
+            "P2",
+            "3021.4900"
+          ],
+          [
+            "R2",
+            "1638.1100"
+          ],
+          [
+            "T2",
+            "1622.6900"
+          ],
+          [
+            "X2",
+            " 549.1270"
+          ],
+          [
+            "Y2",
+            "1177.0100"
+          ]
+        ]
+      },
+      {
+        "row": "3",
+        "stored_cells": 3465,
+        "first_cells": [
+          [
+            "A3",
+            "Q9NRR4"
+          ],
+          [
+            "B3",
+            "DROSHA"
+          ],
+          [
+            "C3",
+            " 9245.840"
+          ],
+          [
+            "F3",
+            "12053.000"
+          ],
+          [
+            "L3",
+            "16686.600"
+          ],
+          [
+            "Q3",
+            "10005.800"
+          ],
+          [
+            "AF3",
+            "15861.900"
+          ],
+          [
+            "KP3",
+            "13212.500"
+          ],
+          [
+            "QQ3",
+            "15501.400"
+          ],
+          [
+            "QT3",
+            " 6773.970"
+          ],
+          [
+            "QW3",
+            "11894.200"
+          ],
+          [
+            "RD3",
+            " 5101.480"
+          ]
+        ]
+      },
+      {
+        "row": "4",
+        "stored_cells": 11315,
+        "first_cells": [
+          [
+            "A4",
+            "Q99747"
+          ],
+          [
+            "B4",
+            "NAPG"
+          ],
+          [
+            "C4",
+            "  997.7320"
+          ],
+          [
+            "E4",
+            " 2964.2300"
+          ],
+          [
+            "F4",
+            " 3368.3700"
+          ],
+          [
+            "G4",
+            " 3000.4000"
+          ],
+          [
+            "I4",
+            " 2873.7600"
+          ],
+          [
+            "J4",
+            " 3290.7600"
+          ],
+          [
+            "L4",
+            " 1538.0900"
+          ],
+          [
+            "M4",
+            "  257.5280"
+          ],
+          [
+            "N4",
+            " 3226.9500"
+          ],
+          [
+            "P4",
+            " 1134.8300"
+          ]
+        ]
+      }
+    ],
+    "note": "Only first 4 rows and first 40k shared strings inspected; not full numeric QC."
+  },
+  "protein_sample_info": {
+    "bytes": 691278,
+    "sheets": [
+      {
+        "name": "Sheet 1",
+        "sheetId": "1",
+        "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id": "rId1"
+      }
+    ],
+    "dimension": "A1:M15074",
+    "preview": [
+      {
+        "row": "1",
+        "stored_cells": 13,
+        "first_cells": [
+          [
+            "A1",
+            "Sample_ID"
+          ],
+          [
+            "B1",
+            "Cell_Line"
+          ],
+          [
+            "C1",
+            "Pert_ID1"
+          ],
+          [
+            "D1",
+            "Pert_Name1"
+          ],
+          [
+            "E1",
+            "Pert_Does1"
+          ],
+          [
+            "F1",
+            "Pert_ID2"
+          ],
+          [
+            "G1",
+            "Pert_Name2"
+          ],
+          [
+            "H1",
+            "Pert_Does2"
+          ],
+          [
+            "I1",
+            "Pert_Time"
+          ],
+          [
+            "J1",
+            "BioRep"
+          ],
+          [
+            "K1",
+            "NY_Label"
+          ],
+          [
+            "L1",
+            "Machine"
+          ]
+        ]
+      },
+      {
+        "row": "2",
+        "stored_cells": 9,
+        "first_cells": [
+          [
+            "A2",
+            "1038"
+          ],
+          [
+            "B2",
+            "BT20"
+          ],
+          [
+            "C2",
+            "#10"
+          ],
+          [
+            "D2",
+            "Abemaciclib"
+          ],
+          [
+            "E2",
+            "10"
+          ],
+          [
+            "I2",
+            "24"
+          ],
+          [
+            "J2",
+            "1"
+          ],
+          [
+            "L2",
+            "WAE"
+          ],
+          [
+            "M2",
+            "single"
+          ]
+        ]
+      },
+      {
+        "row": "3",
+        "stored_cells": 9,
+        "first_cells": [
+          [
+            "A3",
+            "2835"
+          ],
+          [
+            "B3",
+            "BT20"
+          ],
+          [
+            "C3",
+            "#10"
+          ],
+          [
+            "D3",
+            "Abemaciclib"
+          ],
+          [
+            "E3",
+            "10"
+          ],
+          [
+            "I3",
+            "24"
+          ],
+          [
+            "J3",
+            "2"
+          ],
+          [
+            "L3",
+            "WAE"
+          ],
+          [
+            "M3",
+            "single"
+          ]
+        ]
+      },
+      {
+        "row": "4",
+        "stored_cells": 9,
+        "first_cells": [
+          [
+            "A4",
+            "5661"
+          ],
+          [
+            "B4",
+            "BT20"
+          ],
+          [
+            "C4",
+            "#10"
+          ],
+          [
+            "D4",
+            "Abemaciclib"
+          ],
+          [
+            "E4",
+            "10"
+          ],
+          [
+            "I4",
+            "24"
+          ],
+          [
+            "J4",
+            "3"
+          ],
+          [
+            "L4",
+            "WAE"
+          ],
+          [
+            "M4",
+            "single"
+          ]
+        ]
+      }
+    ],
+    "note": "Only first 4 rows and first 40k shared strings inspected; not full numeric QC.",
+    "sample_info_rows": 15073,
+    "HS578T_rows": 813,
+    "HS578T_drug_types": {
+      "single": 545,
+      "combo": 268
+    },
+    "HS578T_time_values": {
+      "24": 265,
+      "48": 284,
+      "6": 264
+    },
+    "HS578T_control_name_no_rows": 41,
+    "HS578T_controls_time": {
+      "6": 13,
+      "24": 14,
+      "48": 14
+    },
+    "HS578T_controls_preview": [
+      {
+        "Sample_ID": "253",
+        "Cell_Line": "HS578T",
+        "Pert_ID1": "no",
+        "Pert_Name1": "no",
+        "Pert_Does1": "0",
+        "Pert_ID2": null,
+        "Pert_Name2": null,
+        "Pert_Does2": null,
+        "Pert_Time": 6,
+        "BioRep": null,
+        "NY_Label": null,
+        "Machine": "D",
+        "Drug_Type": "single"
+      },
+      {
+        "Sample_ID": "274",
+        "Cell_Line": "HS578T",
+        "Pert_ID1": "no",
+        "Pert_Name1": "no",
+        "Pert_Does1": "0",
+        "Pert_ID2": null,
+        "Pert_Name2": null,
+        "Pert_Does2": null,
+        "Pert_Time": 24,
+        "BioRep": null,
+        "NY_Label": null,
+        "Machine": "D",
+        "Drug_Type": "single"
+      }
+    ]
+  }
+}

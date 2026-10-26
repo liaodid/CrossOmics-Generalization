@@ -1,0 +1,27 @@
+{
+  "scope": "946c2dde4ebaa65b",
+  "complete": true,
+  "scan_complete": true,
+  "status": "complete",
+  "total_source_shards": 3388,
+  "scanned_shards": 3388,
+  "candidate_shards": 3312,
+  "completed_candidate_shards": 3312,
+  "index_errors": 0,
+  "extraction_errors": 0,
+  "selected_cells": 161217,
+  "single_cell_saved": true,
+  "parts_directory": "/content/drive/MyDrive/virtualcell_ptds_tahoe_alignment_v1/results/parts_946c2dde4ebaa65b",
+  "revision": "349e2a55f5538a3e73b32a06c6bdd8e9e87011e8",
+  "validation_passed": true,
+  "matched_ptds_drugs": 27,
+  "matched_cell_lines": [
+    "CVCL_0332"
+  ],
+  "actual_cell_drug_pairs": 27,
+  "pseudobulk_rows": 119,
+  "genes": 62710,
+  "missing_control_groups": 0,
+  "unresolved_ptds_drugs": 1,
+  "generated_utc": "2026-10-16T10:03:17.566092+00:00"
+}
