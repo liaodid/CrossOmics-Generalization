@@ -1,0 +1,2 @@
+﻿ptds_drug,query,pubchem_cid,pubchem_inchikey,parent_inchikey,status,basis,query_url,error
+Verteporfin,Verteporfin,,,,lookup_failed,pubchem_name_unique_candidate,,"404 Client Error: PUGREST.NotFound for url: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/Verteporfin/property/InChI,InChIKey/JSON"

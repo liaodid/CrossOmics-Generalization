@@ -1,0 +1,120 @@
+﻿pseudobulk_id,sample,cell_line_id,plate,n_cells,alignment_role,drug,drugname_drugconc,dose,dose_unit,time_h_from_paper,cell_name
+pb_00000,smp_1497,CVCL_0332,plate1,765,matched_drug,Everolimus,"[('Everolimus', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00001,smp_1499,CVCL_0332,plate1,1,matched_drug,Abemaciclib,"[('Abemaciclib', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00002,smp_1503,CVCL_0332,plate1,1123,matched_drug,Oxaliplatin,"[('Oxaliplatin', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00003,smp_1504,CVCL_0332,plate1,734,matched_drug,Alpelisib,"[('Alpelisib', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00004,smp_1505,CVCL_0332,plate1,868,matched_drug,Lapatinib ditosylate,"[('Lapatinib ditosylate', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00005,smp_1514,CVCL_0332,plate1,1103,matched_drug,Tucatinib,"[('Tucatinib', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00006,smp_1527,CVCL_0332,plate1,1174,matched_drug,Paclitaxel,"[('Paclitaxel', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00007,smp_1551,CVCL_0332,plate1,795,matched_drug,Everolimus,"[('Everolimus', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00008,smp_1578,CVCL_0332,plate1,718,matched_drug,vincristine,"[('vincristine', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00009,smp_1587,CVCL_0332,plate1,1251,matched_drug,Anastrozole,"[('Anastrozole', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00010,smp_1589,CVCL_0332,plate1,1181,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00011,smp_1590,CVCL_0332,plate1,1388,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00012,smp_1593,CVCL_0332,plate2,1724,matched_drug,Everolimus,"[('Everolimus', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00013,smp_1595,CVCL_0332,plate2,1306,matched_drug,Abemaciclib,"[('Abemaciclib', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00014,smp_1599,CVCL_0332,plate2,1982,matched_drug,Oxaliplatin,"[('Oxaliplatin', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00015,smp_1600,CVCL_0332,plate2,1334,matched_drug,Alpelisib,"[('Alpelisib', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00016,smp_1601,CVCL_0332,plate2,1448,matched_drug,Lapatinib ditosylate,"[('Lapatinib ditosylate', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00017,smp_1610,CVCL_0332,plate2,1278,matched_drug,Tucatinib,"[('Tucatinib', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00018,smp_1623,CVCL_0332,plate2,2317,matched_drug,Paclitaxel,"[('Paclitaxel', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00019,smp_1647,CVCL_0332,plate2,518,matched_drug,Everolimus,"[('Everolimus', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00020,smp_1664,CVCL_0332,plate2,1913,matched_drug,olaparib,"[('olaparib', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00021,smp_1674,CVCL_0332,plate2,520,matched_drug,vincristine,"[('vincristine', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00022,smp_1683,CVCL_0332,plate2,2438,matched_drug,Anastrozole,"[('Anastrozole', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00023,smp_1685,CVCL_0332,plate2,1994,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00024,smp_1686,CVCL_0332,plate2,1837,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00025,smp_1689,CVCL_0332,plate3,1682,matched_drug,Everolimus,"[('Everolimus', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00026,smp_1691,CVCL_0332,plate3,766,matched_drug,Abemaciclib,"[('Abemaciclib', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00027,smp_1695,CVCL_0332,plate3,860,matched_drug,Oxaliplatin,"[('Oxaliplatin', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00028,smp_1696,CVCL_0332,plate3,709,matched_drug,Alpelisib,"[('Alpelisib', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00029,smp_1697,CVCL_0332,plate3,1450,matched_drug,Lapatinib ditosylate,"[('Lapatinib ditosylate', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00030,smp_1706,CVCL_0332,plate3,1561,matched_drug,Tucatinib,"[('Tucatinib', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00031,smp_1719,CVCL_0332,plate3,1855,matched_drug,Paclitaxel,"[('Paclitaxel', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00032,smp_1743,CVCL_0332,plate3,387,matched_drug,Everolimus,"[('Everolimus', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00033,smp_1760,CVCL_0332,plate3,489,matched_drug,olaparib,"[('olaparib', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00034,smp_1770,CVCL_0332,plate3,462,matched_drug,vincristine,"[('vincristine', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00035,smp_1779,CVCL_0332,plate3,835,matched_drug,Anastrozole,"[('Anastrozole', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00036,smp_1781,CVCL_0332,plate3,948,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00037,smp_1782,CVCL_0332,plate3,746,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00038,smp_1843,CVCL_0332,plate4,271,matched_drug,Docetaxel,"[('Docetaxel', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00039,smp_1859,CVCL_0332,plate4,1152,matched_drug,Medroxyprogesterone acetate,"[('Medroxyprogesterone acetate', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00040,smp_1860,CVCL_0332,plate4,1669,matched_drug,Neratinib (maleate),"[('Neratinib (maleate)', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00041,smp_1877,CVCL_0332,plate4,1253,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00042,smp_1878,CVCL_0332,plate4,1401,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00043,smp_1939,CVCL_0332,plate5,1234,matched_drug,Docetaxel,"[('Docetaxel', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00044,smp_1955,CVCL_0332,plate5,974,matched_drug,Medroxyprogesterone acetate,"[('Medroxyprogesterone acetate', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00045,smp_1956,CVCL_0332,plate5,905,matched_drug,Neratinib (maleate),"[('Neratinib (maleate)', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00046,smp_1973,CVCL_0332,plate5,1464,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00047,smp_1974,CVCL_0332,plate5,1940,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00048,smp_2035,CVCL_0332,plate6,653,matched_drug,Docetaxel,"[('Docetaxel', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00049,smp_2051,CVCL_0332,plate6,1327,matched_drug,Medroxyprogesterone acetate,"[('Medroxyprogesterone acetate', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00050,smp_2052,CVCL_0332,plate6,1988,matched_drug,Neratinib (maleate),"[('Neratinib (maleate)', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00051,smp_2069,CVCL_0332,plate6,1704,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00052,smp_2070,CVCL_0332,plate6,1725,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00053,smp_2082,CVCL_0332,plate7,718,matched_drug,Irinotecan (hydrochloride),"[('Irinotecan (hydrochloride)', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00054,smp_2098,CVCL_0332,plate7,1534,matched_drug,Erlotinib,"[('Erlotinib', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00055,smp_2106,CVCL_0332,plate7,372,matched_drug,Epirubicin (hydrochloride),"[('Epirubicin (hydrochloride)', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00056,smp_2124,CVCL_0332,plate7,1132,matched_drug,Decitabine,"[('Decitabine', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00057,smp_2145,CVCL_0332,plate7,1250,matched_drug,Doxorubicin (hydrochloride),"[('Doxorubicin (hydrochloride)', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00058,smp_2165,CVCL_0332,plate7,803,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00059,smp_2166,CVCL_0332,plate7,954,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00060,smp_2178,CVCL_0332,plate8,2151,matched_drug,Irinotecan (hydrochloride),"[('Irinotecan (hydrochloride)', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00061,smp_2194,CVCL_0332,plate8,2526,matched_drug,Erlotinib,"[('Erlotinib', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00062,smp_2202,CVCL_0332,plate8,989,matched_drug,Epirubicin (hydrochloride),"[('Epirubicin (hydrochloride)', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00063,smp_2220,CVCL_0332,plate8,1098,matched_drug,Decitabine,"[('Decitabine', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00064,smp_2241,CVCL_0332,plate8,740,matched_drug,Doxorubicin (hydrochloride),"[('Doxorubicin (hydrochloride)', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00065,smp_2261,CVCL_0332,plate8,1208,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00066,smp_2262,CVCL_0332,plate8,1990,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00067,smp_2274,CVCL_0332,plate9,1733,matched_drug,Irinotecan (hydrochloride),"[('Irinotecan (hydrochloride)', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00068,smp_2290,CVCL_0332,plate9,777,matched_drug,Erlotinib,"[('Erlotinib', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00069,smp_2298,CVCL_0332,plate9,1386,matched_drug,Epirubicin (hydrochloride),"[('Epirubicin (hydrochloride)', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00070,smp_2316,CVCL_0332,plate9,1065,matched_drug,Decitabine,"[('Decitabine', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00071,smp_2337,CVCL_0332,plate9,478,matched_drug,Doxorubicin (hydrochloride),"[('Doxorubicin (hydrochloride)', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00072,smp_2357,CVCL_0332,plate9,1565,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00073,smp_2358,CVCL_0332,plate9,1180,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00074,smp_2376,CVCL_0332,plate10,1261,matched_drug,Phenylephrine (hydrochloride),"[('Phenylephrine (hydrochloride)', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00075,smp_2377,CVCL_0332,plate10,1250,matched_drug,Entrectinib,"[('Entrectinib', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00076,smp_2414,CVCL_0332,plate10,1420,matched_drug,Bexarotene,"[('Bexarotene', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00077,smp_2416,CVCL_0332,plate10,1196,matched_drug,Vandetanib,"[('Vandetanib', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00078,smp_2421,CVCL_0332,plate10,1248,matched_drug,Fulvestrant,"[('Fulvestrant', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00079,smp_2436,CVCL_0332,plate10,547,matched_drug,Methotrexate,"[('Methotrexate', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00080,smp_2437,CVCL_0332,plate10,1207,matched_drug,5-Fluorouracil,"[('5-Fluorouracil', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00081,smp_2439,CVCL_0332,plate10,1276,matched_drug,5-Azacytidine,"[('5-Azacytidine', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00082,smp_2453,CVCL_0332,plate10,3369,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00083,smp_2454,CVCL_0332,plate10,1115,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00084,smp_2472,CVCL_0332,plate11,2284,matched_drug,Phenylephrine (hydrochloride),"[('Phenylephrine (hydrochloride)', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00085,smp_2473,CVCL_0332,plate11,2364,matched_drug,Entrectinib,"[('Entrectinib', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00086,smp_2510,CVCL_0332,plate11,2012,matched_drug,Bexarotene,"[('Bexarotene', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00087,smp_2512,CVCL_0332,plate11,1396,matched_drug,Vandetanib,"[('Vandetanib', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00088,smp_2517,CVCL_0332,plate11,975,matched_drug,Fulvestrant,"[('Fulvestrant', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00089,smp_2532,CVCL_0332,plate11,2294,matched_drug,Methotrexate,"[('Methotrexate', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00090,smp_2533,CVCL_0332,plate11,1861,matched_drug,5-Fluorouracil,"[('5-Fluorouracil', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00091,smp_2535,CVCL_0332,plate11,1162,matched_drug,5-Azacytidine,"[('5-Azacytidine', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00092,smp_2549,CVCL_0332,plate11,1917,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00093,smp_2550,CVCL_0332,plate11,2115,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00094,smp_2568,CVCL_0332,plate12,1535,matched_drug,Phenylephrine (hydrochloride),"[('Phenylephrine (hydrochloride)', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00095,smp_2569,CVCL_0332,plate12,1072,matched_drug,Entrectinib,"[('Entrectinib', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00096,smp_2606,CVCL_0332,plate12,1933,matched_drug,Bexarotene,"[('Bexarotene', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00097,smp_2608,CVCL_0332,plate12,2092,matched_drug,Vandetanib,"[('Vandetanib', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00098,smp_2613,CVCL_0332,plate12,4394,matched_drug,Fulvestrant,"[('Fulvestrant', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00099,smp_2628,CVCL_0332,plate12,2329,matched_drug,Methotrexate,"[('Methotrexate', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00100,smp_2629,CVCL_0332,plate12,1887,matched_drug,5-Fluorouracil,"[('5-Fluorouracil', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00101,smp_2631,CVCL_0332,plate12,940,matched_drug,5-Azacytidine,"[('5-Azacytidine', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00102,smp_2645,CVCL_0332,plate12,1183,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00103,smp_2646,CVCL_0332,plate12,1628,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00104,smp_2647,CVCL_0332,plate13,1692,matched_drug,Abemaciclib,"[('Abemaciclib', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00105,smp_2654,CVCL_0332,plate13,1421,matched_drug,olaparib,"[('olaparib', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00106,smp_2669,CVCL_0332,plate13,1016,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00107,smp_2670,CVCL_0332,plate13,719,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00108,smp_2676,CVCL_0332,plate13,987,matched_drug,Irinotecan (hydrochloride),"[('Irinotecan (hydrochloride)', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00109,smp_2688,CVCL_0332,plate13,2412,matched_drug,Irinotecan (hydrochloride),"[('Irinotecan (hydrochloride)', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00110,smp_2700,CVCL_0332,plate13,1677,matched_drug,Irinotecan (hydrochloride),"[('Irinotecan (hydrochloride)', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00111,smp_2718,CVCL_0332,plate13,1892,matched_drug,Ribociclib,"[('Ribociclib', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00112,smp_2730,CVCL_0332,plate13,1490,matched_drug,Ribociclib,"[('Ribociclib', 0.5, 'uM')]",0.5,uM,24,HS-578T
+pb_00113,smp_2742,CVCL_0332,plate13,2011,matched_drug,Ribociclib,"[('Ribociclib', 0.05, 'uM')]",0.05,uM,24,HS-578T
+pb_00114,smp_2803,CVCL_0332,plate14,1492,matched_drug,Docetaxel,"[('Docetaxel', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00115,smp_2819,CVCL_0332,plate14,1009,matched_drug,Medroxyprogesterone acetate,"[('Medroxyprogesterone acetate', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00116,smp_2820,CVCL_0332,plate14,857,matched_drug,Neratinib (maleate),"[('Neratinib (maleate)', 5.0, 'uM')]",5.0,uM,24,HS-578T
+pb_00117,smp_2837,CVCL_0332,plate14,686,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
+pb_00118,smp_2838,CVCL_0332,plate14,825,plate_control,DMSO_TF,"[('DMSO_TF', 0.0, 'uM')]",0.0,uM,24,HS-578T
