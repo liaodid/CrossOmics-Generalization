@@ -49,6 +49,13 @@ tmp/literature/
 /tmp/
 /baseline/proteintalks/*.xlsx
 
+# Local generated artifacts and computer migration packages
+/outputs/
+/transfer-*/
+/script/script/
+/, result summaries and presentation*
+/*add related papers and dataset documentation*
+
 # LaTeX 编译中间文件
 /output/**/*.log
 /output/**/*.aux

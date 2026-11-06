@@ -1,0 +1,36 @@
+{
+  "holdout_cell_line": "MCF7",
+  "n": 90,
+  "positives": 23,
+  "positive_fraction": 0.25555555555555554,
+  "accuracy_threshold_0.5": 0.8888888888888888,
+  "auprc_average_precision": 0.8538844241663728,
+  "auroc": 0.9162881245944192,
+  "f1_threshold_0.5": 0.761904761904762,
+  "confusion_matrix_rows_true_cols_pred_0_1": [
+    [
+      64,
+      3
+    ],
+    [
+      7,
+      16
+    ]
+  ],
+  "proteomics_mse_normalized_space": 0.04965265834730408,
+  "all_negative_accuracy_baseline": 0.7444444444444445,
+  "random_ranking_AP_reference_prevalence": 0.25555555555555554,
+  "test_samples_with_upstream_nan_replacement": 5,
+  "checkpoint": "E:\\liaodi\\CrossOmics-Generalization\\results\\proteintalks\\mcf7_train_5090\\6_24_48h_28ad8c45f25979e9748df73e51da04ba481d65ab9fbee32c78e249a8e3a33a4c\\best_checkpoint.pt",
+  "checkpoint_sha256": "a90a42d7d163df36df301777a01181074d1cec4bbf75889d9608a0830f685382",
+  "checkpoint_epoch_zero_based": 21,
+  "weight_selection": "Best saved validation joint loss, no test-based selection; deterministic, no SWAG.",
+  "data_and_model_loader_sha256_verified": true,
+  "environment": {
+    "torch": "2.7.1+cu128",
+    "cuda": "12.8",
+    "device": "cuda"
+  },
+  "label_policy": "Unmodified upstream loader: residual missing phenotype becomes 0; tensor NaNs become 1e-6.",
+  "limitations": "Own 80/20 development split; upstream residual missing labels/NaN replacements retained; not an exact reproduction of the paper's original fold."
+}
