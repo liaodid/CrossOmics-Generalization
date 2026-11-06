@@ -1,0 +1,19 @@
+# Install CUDA wheels FIRST using the official cu128 index.
+# Windows / RTX 5090 candidate environment; validate on the target GPU.
+torch==2.7.1
+torchvision==0.22.1
+torchdyn==1.0.6
+torchdiffeq==0.2.3
+torchcde==0.2.5
+torchsde==0.2.6
+pytorch-lightning==2.2.5
+torchmetrics==1.5.2
+setuptools==80.9.0
+numpy==1.24.2
+pandas==2.3.1
+scipy==1.15.3
+scikit-learn==1.3.0
+matplotlib==3.7.2
+ipykernel>=6,<7
+ipywidgets>=8,<9
+poethepoet==0.10.0

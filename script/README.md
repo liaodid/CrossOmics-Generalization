@@ -1,5 +1,9 @@
 # script/：分析脚本
 
+2026-11-06 新增 ProteinTalks 留细胞系训练、批量运行、独立评价与审计入口。见 [最新进度](../docs/progress-2026-11-06.md)、`docs/proteintalks_*holdout.md` 和 `docs/proteintalks_remaining_folds.md`。批量脚本默认 batch size 为 32，已有其余 15 折实际使用 64，重现时须显式指定。
+
+`package_research_transfer.py` 生成 ZIP64 迁移快照、逐文件 SHA256 清单并完整读回校验，见 [迁移说明](../docs/migration-2026-11-06.md)。
+
 放可重复运行的分析与数据处理脚本。约定：
 
 - 默认从仓库根目录运行，输入输出路径写成参数或环境变量，不写死个人机器路径。

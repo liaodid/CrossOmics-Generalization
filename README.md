@@ -2,10 +2,11 @@
 
 研究问题：**同时用转录组和蛋白组的扰动数据训练一个扰动响应模型（“虚拟细胞”），能否提升蛋白组层面预测的泛化性。**
 
-> **当前阶段：设想与数据调研，尚无实验结果。**
+> **当前阶段（2026-11-06）：已完成 ProteinTalks 独立留细胞系实验及本地结果审计，正在准备跨组学迁移研究。**
 > - 只使用公开数据，不做湿实验。
-> - 主要对标对象：西湖大学的蛋白组虚拟细胞模型 ProteinTalks（Nature 2026，已确认）。代码已公开，训练数据尚未拿到。
-> - 已入库的代码只有 Baseline 1（UniPert‑G2CP 上游代码，未运行）。
+> - 已获取 ProteinTalks 代码及作者处理数据；本地保存了 MCF7 与其余 16 折结果。数据、权重和完整输出通过迁移压缩包传输。
+> - 已入库 UniPert‑G2CP、ProteinTalks 上游代码及本项目的留出训练、独立测试与审计脚本；联合训练模型尚未实现。
+> - 当前结果与配置差异见 [最新进度](docs/progress-2026-11-06.md)；换电脑见 [迁移说明](docs/migration-2026-11-06.md)。以下早期条目保留历史背景，以最新进度为准。
 >
 > 已核实的事实、讨论结论和待定事项都记录在 [docs/findings.md](docs/findings.md)。
 
@@ -40,7 +41,7 @@ CrossOmics-Generalization/
 │   │   ├── G2CP/                #   扰动响应预测模型（改自 GEARS）
 │   │   ├── analysis_assets/     #   论文作图 notebook（依赖相对路径，需与代码同目录）
 │   │   └── extra/               #   复现仓库之外的原作者源码 + 来源登记表
-│   └── proteintalks/            # Baseline 2：ProteinTalks（主要对标对象；代码公开，尚未放入本仓库）
+│   └── proteintalks/            # Baseline 2：ProteinTalks 上游源码及说明
 ├── data/                        # 数据：Git 只跟踪各数据集的 README.md
 │   ├── README.md                #   数据集一览、论文与数据文档对应表、目录约定
 │   ├── <方法名>/                #   各篇相关论文所用数据的说明（gears、cpa、state、multipert 等 11 个）
@@ -91,13 +92,13 @@ CrossOmics-Generalization/
 - [x] 确认 ProteinTalks 代码公开且完整（`guomics-lab/PTV-1`），并整理其输入格式
 - [x] 核对 ProteinTalks 细胞系与 LINCS 的重合：A375、MCF7 两边都有（`script/lincs_cell_line_coverage.sh`）
 - [ ] 定义任务、测试集与指标（[待定事项](docs/findings.md#待定事项) 第 2 项）
-- [ ] 获取 ProteinTalks 训练数据（正在与西湖作者联系）
+- [x] 获取 ProteinTalks 作者处理数据（本地保存，不提交 Git）
 - [x] 完成首轮 18 篇相关文献检索：已找到 TransPro、MultiPert 等跨组学先例（尚非穷尽性检索）
 - [x] PTDS × LINCS（MCF7）药物对齐：20 种药两边都有，且 24 h / 10 µM 条件完全一致（200 条 RNA 签名、58 个 24 h 蛋白样本；`reports/ptds-unipert-2026-10-16/`、`reports/weekly-2026-10-16/`）
 - [x] 第一次组会周汇报（Week 1）：9 张图由 `script/make_weekly_figures.py` 生成
-- [ ] PTDS × Tahoe-100M 对齐：流程已验证，尚未完整扫描
+- [x] 记录 Week 2 PTDS × Tahoe-100M 数据准备结果（`reports/ptds-tahoe-2026-10-23/`）；后续建模仍需核对特征映射
 - [ ] 选定主线细胞系，整理转录组与蛋白组数据
-- [ ] 跑通基线，建立统一评价协议
+- [x] 跑通 ProteinTalks 独立留细胞系实验和结果审计；严格原文复现、多种子与统一 batch size 比较仍待完成
 - [ ] 实现并评估联合训练模型
 
 ## 运行环境说明
